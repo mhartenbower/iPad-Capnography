@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Co2Value" representedClassName="Co2Value" syncable="YES">
+        <attribute name="co2Value" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="attributedToA" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="hasA" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="dateOfBirth" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" attributeType="String" syncable="YES"/>
+        <attribute name="medicalID" attributeType="String" syncable="YES"/>
+        <relationship name="hasA" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Co2Value" inverseName="attributedToA" inverseEntity="Co2Value" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Co2Value" positionX="-324" positionY="18" width="128" height="88"/>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
+</model>

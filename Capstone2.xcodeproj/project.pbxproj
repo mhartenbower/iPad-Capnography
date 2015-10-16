@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A6E67081BBF290700F20CF2 /* Heart Monitor-50-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E67071BBF290700F20CF2 /* Heart Monitor-50-2.png */; };
+		0A6E670A1BBF299800F20CF2 /* Heart Monitor-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E67091BBF299800F20CF2 /* Heart Monitor-32.png */; };
+		0A6E670C1BBF2ABC00F20CF2 /* Caduceus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E670B1BBF2ABC00F20CF2 /* Caduceus-32.png */; };
+		0A6E670E1BBF2C4F00F20CF2 /* Bar Chart-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E670D1BBF2C4F00F20CF2 /* Bar Chart-32.png */; };
+		0A6E67101BBF2CF800F20CF2 /* Medical Doctor-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E670F1BBF2CF800F20CF2 /* Medical Doctor-32.png */; };
+		0AF9E3951A85CCF700A8830A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9E3941A85CCF700A8830A /* main.m */; };
+		0AF9E39E1A85CCF700A8830A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF9E39C1A85CCF700A8830A /* Main.storyboard */; };
+		0AF9E3A01A85CCF700A8830A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF9E39F1A85CCF700A8830A /* Images.xcassets */; };
+		0AF9E3A31A85CCF700A8830A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF9E3A11A85CCF700A8830A /* LaunchScreen.xib */; };
+		0AF9E3AF1A85CCF700A8830A /* Capstone2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9E3AE1A85CCF700A8830A /* Capstone2Tests.m */; };
+		0AF9EB931A8C0D7F00A8830A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9EB881A8C0D7F00A8830A /* AppDelegate.m */; };
+		0AF9EB941A8C0D7F00A8830A /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9EB8A1A8C0D7F00A8830A /* CustomCellBackground.m */; };
+		0AF9EB951A8C0D7F00A8830A /* RFduino.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9EB8C1A8C0D7F00A8830A /* RFduino.m */; };
+		0AF9EB961A8C0D7F00A8830A /* RfduinoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9EB8F1A8C0D7F00A8830A /* RfduinoManager.m */; };
+		0AF9EB971A8C0D7F00A8830A /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9EB921A8C0D7F00A8830A /* ScanViewController.m */; };
+		0AF9EB9A1A8C102B00A8830A /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9EB991A8C102B00A8830A /* AppViewController.m */; };
+		0AF9EB9C1A8C130F00A8830A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9EB9B1A8C130F00A8830A /* CoreBluetooth.framework */; };
+		0AF9EBE41A8C1FD500A8830A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9EBE31A8C1FD500A8830A /* UIKit.framework */; };
+		B32EF4181BBCE80E00CDF80F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B32EF4171BBCE80E00CDF80F /* Person.m */; };
+		B32EF41B1BBCE98600CDF80F /* Co2Value.m in Sources */ = {isa = PBXBuildFile; fileRef = B32EF41A1BBCE98600CDF80F /* Co2Value.m */; };
+		B32EF4201BBD018800CDF80F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32EF41F1BBD018800CDF80F /* CoreData.framework */; };
+		B3761ED01BC4BC980020A996 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3761ECF1BC4BC980020A996 /* PDFViewController.m */; };
+		B3761ED21BC4C1C40020A996 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3761ED11BC4C1C40020A996 /* CoreText.framework */; };
+		B3761ED51BC4C2DE0020A996 /* PDFRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3761ED41BC4C2DE0020A996 /* PDFRenderer.m */; };
+		B3761EDA1BC4DD030020A996 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3761ED61BC4D8EA0020A996 /* libCorePlot-CocoaTouch.a */; };
+		B3761F2C1BC4F4010020A996 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = B3761F2B1BC4F4010020A996 /* Icon-76.png */; };
+		B3761F2E1BC4F4160020A996 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3761F2D1BC4F4160020A996 /* Icon-76@2x.png */; };
+		B3FD4C231BC5F23100801771 /* Play Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FD4C221BC5F23100801771 /* Play Filled-50.png */; };
+		B3FD4C251BC5F2E400801771 /* Stop Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FD4C241BC5F2E400801771 /* Stop Filled-50.png */; };
+		B41772C71A9566E5000EC356 /* doctor-with-ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B41772C61A9566E5000EC356 /* doctor-with-ipad.jpg */; };
+		B465C0CF1A9EA1B2008EEB45 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = B465C0CE1A9EA1B2008EEB45 /* Image.png */; };
+		BB0B97E71A9E497C00A41AE3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0B97E61A9E497C00A41AE3 /* QuartzCore.framework */; };
+		BB0B97E91A9E499900A41AE3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0B97E81A9E499900A41AE3 /* Accelerate.framework */; };
+		BB409C451BB5BC590086483F /* AppData.m in Sources */ = {isa = PBXBuildFile; fileRef = BB409C441BB5BC590086483F /* AppData.m */; };
+		BB409C481BB5C1BD0086483F /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB409C461BB5C1BD0086483F /* CoreData.xcdatamodeld */; };
+		BB409C4B1BB5C5390086483F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB409C4A1BB5C5390086483F /* TabBarViewController.m */; };
+		BB409C4E1BB5C5A50086483F /* PatientInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB409C4D1BB5C5A50086483F /* PatientInformationViewController.m */; };
+		BB409C511BB5C73F0086483F /* LongTermGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB409C501BB5C73F0086483F /* LongTermGraphViewController.m */; };
+		BB409C541BB5C7810086483F /* DoctorInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB409C531BB5C7810086483F /* DoctorInformationViewController.m */; };
+		BBDA8D941BB600A600D531CE /* RFduinoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDA8D931BB600A600D531CE /* RFduinoObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AF9E3A91A85CCF700A8830A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AF9E3871A85CCF700A8830A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AF9E38E1A85CCF700A8830A;
+			remoteInfo = Capstone2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A6E67071BBF290700F20CF2 /* Heart Monitor-50-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Heart Monitor-50-2.png"; sourceTree = "<group>"; };
+		0A6E67091BBF299800F20CF2 /* Heart Monitor-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Heart Monitor-32.png"; sourceTree = "<group>"; };
+		0A6E670B1BBF2ABC00F20CF2 /* Caduceus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Caduceus-32.png"; sourceTree = "<group>"; };
+		0A6E670D1BBF2C4F00F20CF2 /* Bar Chart-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bar Chart-32.png"; sourceTree = "<group>"; };
+		0A6E670F1BBF2CF800F20CF2 /* Medical Doctor-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medical Doctor-32.png"; sourceTree = "<group>"; };
+		0AF9E38F1A85CCF700A8830A /* Capstone2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF9E3931A85CCF700A8830A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF9E3941A85CCF700A8830A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AF9E39D1A85CCF700A8830A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AF9E39F1A85CCF700A8830A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0AF9E3A21A85CCF700A8830A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0AF9E3A81A85CCF700A8830A /* Capstone2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Capstone2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF9E3AD1A85CCF700A8830A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF9E3AE1A85CCF700A8830A /* Capstone2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Capstone2Tests.m; sourceTree = "<group>"; };
+		0AF9EB871A8C0D7F00A8830A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../rfduino/AppDelegate.h; sourceTree = "<group>"; };
+		0AF9EB881A8C0D7F00A8830A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../rfduino/AppDelegate.m; sourceTree = "<group>"; };
+		0AF9EB891A8C0D7F00A8830A /* CustomCellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackground.h; sourceTree = "<group>"; };
+		0AF9EB8A1A8C0D7F00A8830A /* CustomCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
+		0AF9EB8B1A8C0D7F00A8830A /* RFduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFduino.h; sourceTree = "<group>"; };
+		0AF9EB8C1A8C0D7F00A8830A /* RFduino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFduino.m; sourceTree = "<group>"; };
+		0AF9EB8D1A8C0D7F00A8830A /* RFduinoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFduinoDelegate.h; sourceTree = "<group>"; };
+		0AF9EB8E1A8C0D7F00A8830A /* RfduinoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RfduinoManager.h; sourceTree = "<group>"; };
+		0AF9EB8F1A8C0D7F00A8830A /* RfduinoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RfduinoManager.m; sourceTree = "<group>"; };
+		0AF9EB901A8C0D7F00A8830A /* RFduinoManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFduinoManagerDelegate.h; sourceTree = "<group>"; };
+		0AF9EB911A8C0D7F00A8830A /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		0AF9EB921A8C0D7F00A8830A /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		0AF9EB981A8C0FE000A8830A /* AppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppViewController.h; path = Capstone2/AppViewController.h; sourceTree = "<group>"; };
+		0AF9EB991A8C102B00A8830A /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppViewController.m; path = Capstone2/AppViewController.m; sourceTree = "<group>"; };
+		0AF9EB9B1A8C130F00A8830A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0AF9EBE31A8C1FD500A8830A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B32EF4161BBCE80E00CDF80F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Capstone2/Person.h; sourceTree = "<group>"; };
+		B32EF4171BBCE80E00CDF80F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Capstone2/Person.m; sourceTree = "<group>"; };
+		B32EF4191BBCE98600CDF80F /* Co2Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Co2Value.h; path = Capstone2/Co2Value.h; sourceTree = "<group>"; };
+		B32EF41A1BBCE98600CDF80F /* Co2Value.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Co2Value.m; path = Capstone2/Co2Value.m; sourceTree = "<group>"; };
+		B32EF41F1BBD018800CDF80F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B3761ECE1BC4BC980020A996 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
+		B3761ECF1BC4BC980020A996 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		B3761ED11BC4C1C40020A996 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B3761ED31BC4C2DE0020A996 /* PDFRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDFRenderer.h; path = Capstone2/PDFRenderer.h; sourceTree = "<group>"; };
+		B3761ED41BC4C2DE0020A996 /* PDFRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDFRenderer.m; path = Capstone2/PDFRenderer.m; sourceTree = "<group>"; };
+		B3761ED61BC4D8EA0020A996 /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
+		B3761EDC1BC4DDFC0020A996 /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
+		B3761EDD1BC4DDFC0020A996 /* CPTAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnimation.h; sourceTree = "<group>"; };
+		B3761EDE1BC4DDFC0020A996 /* CPTAnimationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnimationOperation.h; sourceTree = "<group>"; };
+		B3761EDF1BC4DDFC0020A996 /* CPTAnimationPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnimationPeriod.h; sourceTree = "<group>"; };
+		B3761EE01BC4DDFC0020A996 /* CPTAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotation.h; sourceTree = "<group>"; };
+		B3761EE11BC4DDFC0020A996 /* CPTAnnotationHostLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotationHostLayer.h; sourceTree = "<group>"; };
+		B3761EE21BC4DDFC0020A996 /* CPTAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxis.h; sourceTree = "<group>"; };
+		B3761EE31BC4DDFC0020A996 /* CPTAxisLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisLabel.h; sourceTree = "<group>"; };
+		B3761EE41BC4DDFC0020A996 /* CPTAxisLabelGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisLabelGroup.h; sourceTree = "<group>"; };
+		B3761EE51BC4DDFC0020A996 /* CPTAxisSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisSet.h; sourceTree = "<group>"; };
+		B3761EE61BC4DDFC0020A996 /* CPTAxisTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisTitle.h; sourceTree = "<group>"; };
+		B3761EE71BC4DDFC0020A996 /* CPTBarPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTBarPlot.h; sourceTree = "<group>"; };
+		B3761EE81BC4DDFD0020A996 /* CPTBorderedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTBorderedLayer.h; sourceTree = "<group>"; };
+		B3761EE91BC4DDFD0020A996 /* CPTCalendarFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTCalendarFormatter.h; sourceTree = "<group>"; };
+		B3761EEA1BC4DDFD0020A996 /* CPTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTColor.h; sourceTree = "<group>"; };
+		B3761EEB1BC4DDFD0020A996 /* CPTColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTColorSpace.h; sourceTree = "<group>"; };
+		B3761EEC1BC4DDFD0020A996 /* CPTConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTConstraints.h; sourceTree = "<group>"; };
+		B3761EED1BC4DDFD0020A996 /* CPTDataSourceTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTDataSourceTestCase.h; sourceTree = "<group>"; };
+		B3761EEE1BC4DDFD0020A996 /* CPTDebugQuickLook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTDebugQuickLook.h; sourceTree = "<group>"; };
+		B3761EEF1BC4DDFD0020A996 /* CPTDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTDefinitions.h; sourceTree = "<group>"; };
+		B3761EF01BC4DDFD0020A996 /* CPTDerivedXYGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTDerivedXYGraph.h; sourceTree = "<group>"; };
+		B3761EF11BC4DDFD0020A996 /* CPTExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTExceptions.h; sourceTree = "<group>"; };
+		B3761EF21BC4DDFD0020A996 /* CPTFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTFill.h; sourceTree = "<group>"; };
+		B3761EF31BC4DDFD0020A996 /* CPTFunctionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTFunctionDataSource.h; sourceTree = "<group>"; };
+		B3761EF41BC4DDFD0020A996 /* CPTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGradient.h; sourceTree = "<group>"; };
+		B3761EF51BC4DDFD0020A996 /* CPTGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraph.h; sourceTree = "<group>"; };
+		B3761EF61BC4DDFD0020A996 /* CPTGraphHostingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraphHostingView.h; sourceTree = "<group>"; };
+		B3761EF71BC4DDFD0020A996 /* CPTGridLineGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGridLineGroup.h; sourceTree = "<group>"; };
+		B3761EF81BC4DDFD0020A996 /* CPTGridLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGridLines.h; sourceTree = "<group>"; };
+		B3761EF91BC4DDFD0020A996 /* CPTImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTImage.h; sourceTree = "<group>"; };
+		B3761EFA1BC4DDFD0020A996 /* CPTLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLayer.h; sourceTree = "<group>"; };
+		B3761EFB1BC4DDFD0020A996 /* CPTLayerAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLayerAnnotation.h; sourceTree = "<group>"; };
+		B3761EFC1BC4DDFD0020A996 /* CPTLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLegend.h; sourceTree = "<group>"; };
+		B3761EFD1BC4DDFD0020A996 /* CPTLegendEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLegendEntry.h; sourceTree = "<group>"; };
+		B3761EFE1BC4DDFD0020A996 /* CPTLimitBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLimitBand.h; sourceTree = "<group>"; };
+		B3761EFF1BC4DDFD0020A996 /* CPTLineCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLineCap.h; sourceTree = "<group>"; };
+		B3761F001BC4DDFD0020A996 /* CPTLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLineStyle.h; sourceTree = "<group>"; };
+		B3761F011BC4DDFD0020A996 /* CPTMutableLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableLineStyle.h; sourceTree = "<group>"; };
+		B3761F021BC4DDFD0020A996 /* CPTMutableNumericData+TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPTMutableNumericData+TypeConversion.h"; sourceTree = "<group>"; };
+		B3761F031BC4DDFD0020A996 /* CPTMutableNumericData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableNumericData.h; sourceTree = "<group>"; };
+		B3761F041BC4DDFD0020A996 /* CPTMutablePlotRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutablePlotRange.h; sourceTree = "<group>"; };
+		B3761F051BC4DDFD0020A996 /* CPTMutableShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableShadow.h; sourceTree = "<group>"; };
+		B3761F061BC4DDFD0020A996 /* CPTMutableTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableTextStyle.h; sourceTree = "<group>"; };
+		B3761F071BC4DDFD0020A996 /* CPTNumericData+TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPTNumericData+TypeConversion.h"; sourceTree = "<group>"; };
+		B3761F081BC4DDFD0020A996 /* CPTNumericData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTNumericData.h; sourceTree = "<group>"; };
+		B3761F091BC4DDFD0020A996 /* CPTNumericDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTNumericDataType.h; sourceTree = "<group>"; };
+		B3761F0A1BC4DDFD0020A996 /* CPTPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPathExtensions.h; sourceTree = "<group>"; };
+		B3761F0B1BC4DDFD0020A996 /* CPTPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPieChart.h; sourceTree = "<group>"; };
+		B3761F0C1BC4DDFD0020A996 /* CPTPlatformSpecificCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificCategories.h; sourceTree = "<group>"; };
+		B3761F0D1BC4DDFD0020A996 /* CPTPlatformSpecificDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificDefines.h; sourceTree = "<group>"; };
+		B3761F0E1BC4DDFD0020A996 /* CPTPlatformSpecificFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificFunctions.h; sourceTree = "<group>"; };
+		B3761F0F1BC4DDFD0020A996 /* CPTPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlot.h; sourceTree = "<group>"; };
+		B3761F101BC4DDFD0020A996 /* CPTPlotArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotArea.h; sourceTree = "<group>"; };
+		B3761F111BC4DDFD0020A996 /* CPTPlotAreaFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotAreaFrame.h; sourceTree = "<group>"; };
+		B3761F121BC4DDFD0020A996 /* CPTPlotGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotGroup.h; sourceTree = "<group>"; };
+		B3761F131BC4DDFD0020A996 /* CPTPlotRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotRange.h; sourceTree = "<group>"; };
+		B3761F141BC4DDFD0020A996 /* CPTPlotSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSpace.h; sourceTree = "<group>"; };
+		B3761F151BC4DDFD0020A996 /* CPTPlotSpaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSpaceAnnotation.h; sourceTree = "<group>"; };
+		B3761F161BC4DDFD0020A996 /* CPTPlotSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSymbol.h; sourceTree = "<group>"; };
+		B3761F171BC4DDFD0020A996 /* CPTRangePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTRangePlot.h; sourceTree = "<group>"; };
+		B3761F181BC4DDFD0020A996 /* CPTResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTResponder.h; sourceTree = "<group>"; };
+		B3761F191BC4DDFD0020A996 /* CPTScatterPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTScatterPlot.h; sourceTree = "<group>"; };
+		B3761F1A1BC4DDFD0020A996 /* CPTShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTShadow.h; sourceTree = "<group>"; };
+		B3761F1B1BC4DDFD0020A996 /* CPTTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTestCase.h; sourceTree = "<group>"; };
+		B3761F1C1BC4DDFD0020A996 /* CPTTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTextLayer.h; sourceTree = "<group>"; };
+		B3761F1D1BC4DDFD0020A996 /* CPTTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTextStyle.h; sourceTree = "<group>"; };
+		B3761F1E1BC4DDFD0020A996 /* CPTTextStylePlatformSpecific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTextStylePlatformSpecific.h; sourceTree = "<group>"; };
+		B3761F1F1BC4DDFD0020A996 /* CPTTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTheme.h; sourceTree = "<group>"; };
+		B3761F201BC4DDFD0020A996 /* CPTTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTimeFormatter.h; sourceTree = "<group>"; };
+		B3761F211BC4DDFD0020A996 /* CPTTradingRangePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTradingRangePlot.h; sourceTree = "<group>"; };
+		B3761F221BC4DDFD0020A996 /* CPTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTUtilities.h; sourceTree = "<group>"; };
+		B3761F231BC4DDFD0020A996 /* CPTXYAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYAxis.h; sourceTree = "<group>"; };
+		B3761F241BC4DDFD0020A996 /* CPTXYAxisSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYAxisSet.h; sourceTree = "<group>"; };
+		B3761F251BC4DDFD0020A996 /* CPTXYGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYGraph.h; sourceTree = "<group>"; };
+		B3761F261BC4DDFD0020A996 /* CPTXYPlotSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYPlotSpace.h; sourceTree = "<group>"; };
+		B3761F271BC4DDFD0020A996 /* mainpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainpage.h; sourceTree = "<group>"; };
+		B3761F281BC4DDFD0020A996 /* NSCoderExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCoderExtensions.h; sourceTree = "<group>"; };
+		B3761F291BC4DDFD0020A996 /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
+		B3761F2A1BC4DDFD0020A996 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
+		B3761F2B1BC4F4010020A996 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		B3761F2D1BC4F4160020A996 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		B3FD4C221BC5F23100801771 /* Play Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play Filled-50.png"; sourceTree = "<group>"; };
+		B3FD4C241BC5F2E400801771 /* Stop Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stop Filled-50.png"; sourceTree = "<group>"; };
+		B41772C61A9566E5000EC356 /* doctor-with-ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "doctor-with-ipad.jpg"; sourceTree = "<group>"; };
+		B465C0CE1A9EA1B2008EEB45 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image.png; sourceTree = "<group>"; };
+		BB0B97E61A9E497C00A41AE3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB0B97E81A9E499900A41AE3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		BB409C431BB5BC590086483F /* AppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppData.h; sourceTree = "<group>"; };
+		BB409C441BB5BC590086483F /* AppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppData.m; sourceTree = "<group>"; };
+		BB409C471BB5C1BD0086483F /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		BB409C491BB5C5390086483F /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarViewController.h; path = Capstone2/TabBarViewController.h; sourceTree = "<group>"; };
+		BB409C4A1BB5C5390086483F /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarViewController.m; path = Capstone2/TabBarViewController.m; sourceTree = "<group>"; };
+		BB409C4C1BB5C5A50086483F /* PatientInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientInformationViewController.h; path = Capstone2/PatientInformationViewController.h; sourceTree = "<group>"; };
+		BB409C4D1BB5C5A50086483F /* PatientInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientInformationViewController.m; path = Capstone2/PatientInformationViewController.m; sourceTree = "<group>"; };
+		BB409C4F1BB5C73F0086483F /* LongTermGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongTermGraphViewController.h; path = Capstone2/LongTermGraphViewController.h; sourceTree = "<group>"; };
+		BB409C501BB5C73F0086483F /* LongTermGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongTermGraphViewController.m; path = Capstone2/LongTermGraphViewController.m; sourceTree = "<group>"; };
+		BB409C521BB5C7810086483F /* DoctorInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoctorInformationViewController.h; path = Capstone2/DoctorInformationViewController.h; sourceTree = "<group>"; };
+		BB409C531BB5C7810086483F /* DoctorInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoctorInformationViewController.m; path = Capstone2/DoctorInformationViewController.m; sourceTree = "<group>"; };
+		BBDA8D921BB600A600D531CE /* RFduinoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFduinoObject.h; path = ../Capstone2/RFduinoObject.h; sourceTree = "<group>"; };
+		BBDA8D931BB600A600D531CE /* RFduinoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RFduinoObject.m; path = ../Capstone2/RFduinoObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AF9E38C1A85CCF700A8830A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3761ED21BC4C1C40020A996 /* CoreText.framework in Frameworks */,
+				B32EF4201BBD018800CDF80F /* CoreData.framework in Frameworks */,
+				BB0B97E91A9E499900A41AE3 /* Accelerate.framework in Frameworks */,
+				BB0B97E71A9E497C00A41AE3 /* QuartzCore.framework in Frameworks */,
+				0AF9EBE41A8C1FD500A8830A /* UIKit.framework in Frameworks */,
+				0AF9EB9C1A8C130F00A8830A /* CoreBluetooth.framework in Frameworks */,
+				B3761EDA1BC4DD030020A996 /* libCorePlot-CocoaTouch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9E3A51A85CCF700A8830A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A6E67061BBF28D800F20CF2 /* Image Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3761F2B1BC4F4010020A996 /* Icon-76.png */,
+				B3761F2D1BC4F4160020A996 /* Icon-76@2x.png */,
+				B3FD4C221BC5F23100801771 /* Play Filled-50.png */,
+				B3FD4C241BC5F2E400801771 /* Stop Filled-50.png */,
+			);
+			name = "Image Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0AF9E3861A85CCF700A8830A = {
+			isa = PBXGroup;
+			children = (
+				B3761ED61BC4D8EA0020A996 /* libCorePlot-CocoaTouch.a */,
+				B3761EDB1BC4DDFC0020A996 /* CorePlotHeaders */,
+				B3761ED11BC4C1C40020A996 /* CoreText.framework */,
+				0AF9EBE31A8C1FD500A8830A /* UIKit.framework */,
+				0AF9EB9B1A8C130F00A8830A /* CoreBluetooth.framework */,
+				BB0B97E61A9E497C00A41AE3 /* QuartzCore.framework */,
+				BB0B97E81A9E499900A41AE3 /* Accelerate.framework */,
+				B32EF41F1BBD018800CDF80F /* CoreData.framework */,
+				0AF9E3911A85CCF700A8830A /* Capstone2 */,
+				0AF9E3AB1A85CCF700A8830A /* Capstone2Tests */,
+				0AF9E3901A85CCF700A8830A /* Products */,
+				B3761ECC1BC4A0440020A996 /* App Image Store */,
+			);
+			sourceTree = "<group>";
+		};
+		0AF9E3901A85CCF700A8830A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9E38F1A85CCF700A8830A /* Capstone2.app */,
+				0AF9E3A81A85CCF700A8830A /* Capstone2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AF9E3911A85CCF700A8830A /* Capstone2 */ = {
+			isa = PBXGroup;
+			children = (
+				B3761ECD1BC4B24B0020A996 /* PDF Generation */,
+				0AF9EB861A8C0D7F00A8830A /* Rfduino  */,
+				B3761EC91BC494870020A996 /* Core Data */,
+				B3761ECB1BC49F4C0020A996 /* View Controllers */,
+				0AF9EB871A8C0D7F00A8830A /* AppDelegate.h */,
+				0AF9EB881A8C0D7F00A8830A /* AppDelegate.m */,
+				BB409C431BB5BC590086483F /* AppData.h */,
+				BB409C441BB5BC590086483F /* AppData.m */,
+				0AF9E39C1A85CCF700A8830A /* Main.storyboard */,
+				0AF9E39F1A85CCF700A8830A /* Images.xcassets */,
+				0A6E67061BBF28D800F20CF2 /* Image Files */,
+				0AF9E3A11A85CCF700A8830A /* LaunchScreen.xib */,
+				0AF9E3921A85CCF700A8830A /* Supporting Files */,
+			);
+			path = Capstone2;
+			sourceTree = "<group>";
+		};
+		0AF9E3921A85CCF700A8830A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9E3931A85CCF700A8830A /* Info.plist */,
+				0AF9E3941A85CCF700A8830A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AF9E3AB1A85CCF700A8830A /* Capstone2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9E3AE1A85CCF700A8830A /* Capstone2Tests.m */,
+				0AF9E3AC1A85CCF700A8830A /* Supporting Files */,
+			);
+			path = Capstone2Tests;
+			sourceTree = "<group>";
+		};
+		0AF9E3AC1A85CCF700A8830A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9E3AD1A85CCF700A8830A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AF9EB861A8C0D7F00A8830A /* Rfduino  */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9EB891A8C0D7F00A8830A /* CustomCellBackground.h */,
+				0AF9EB8A1A8C0D7F00A8830A /* CustomCellBackground.m */,
+				0AF9EB8B1A8C0D7F00A8830A /* RFduino.h */,
+				0AF9EB8C1A8C0D7F00A8830A /* RFduino.m */,
+				BBDA8D921BB600A600D531CE /* RFduinoObject.h */,
+				BBDA8D931BB600A600D531CE /* RFduinoObject.m */,
+				0AF9EB8D1A8C0D7F00A8830A /* RFduinoDelegate.h */,
+				0AF9EB8E1A8C0D7F00A8830A /* RfduinoManager.h */,
+				0AF9EB8F1A8C0D7F00A8830A /* RfduinoManager.m */,
+				0AF9EB901A8C0D7F00A8830A /* RFduinoManagerDelegate.h */,
+				0AF9EB911A8C0D7F00A8830A /* ScanViewController.h */,
+				0AF9EB921A8C0D7F00A8830A /* ScanViewController.m */,
+			);
+			name = "Rfduino ";
+			path = ../rfduino;
+			sourceTree = "<group>";
+		};
+		B3761EC91BC494870020A996 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				B32EF4161BBCE80E00CDF80F /* Person.h */,
+				B32EF4171BBCE80E00CDF80F /* Person.m */,
+				B32EF4191BBCE98600CDF80F /* Co2Value.h */,
+				B32EF41A1BBCE98600CDF80F /* Co2Value.m */,
+				BB409C461BB5C1BD0086483F /* CoreData.xcdatamodeld */,
+			);
+			name = "Core Data";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B3761ECB1BC49F4C0020A996 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AF9EB981A8C0FE000A8830A /* AppViewController.h */,
+				0AF9EB991A8C102B00A8830A /* AppViewController.m */,
+				BB409C521BB5C7810086483F /* DoctorInformationViewController.h */,
+				BB409C531BB5C7810086483F /* DoctorInformationViewController.m */,
+				BB409C4F1BB5C73F0086483F /* LongTermGraphViewController.h */,
+				BB409C501BB5C73F0086483F /* LongTermGraphViewController.m */,
+				BB409C4C1BB5C5A50086483F /* PatientInformationViewController.h */,
+				BB409C4D1BB5C5A50086483F /* PatientInformationViewController.m */,
+				BB409C491BB5C5390086483F /* TabBarViewController.h */,
+				BB409C4A1BB5C5390086483F /* TabBarViewController.m */,
+			);
+			name = "View Controllers";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B3761ECC1BC4A0440020A996 /* App Image Store */ = {
+			isa = PBXGroup;
+			children = (
+				0A6E670F1BBF2CF800F20CF2 /* Medical Doctor-32.png */,
+				0A6E670B1BBF2ABC00F20CF2 /* Caduceus-32.png */,
+				0A6E670D1BBF2C4F00F20CF2 /* Bar Chart-32.png */,
+				B41772C61A9566E5000EC356 /* doctor-with-ipad.jpg */,
+				0A6E67091BBF299800F20CF2 /* Heart Monitor-32.png */,
+				B465C0CE1A9EA1B2008EEB45 /* Image.png */,
+				0A6E67071BBF290700F20CF2 /* Heart Monitor-50-2.png */,
+			);
+			name = "App Image Store";
+			sourceTree = "<group>";
+		};
+		B3761ECD1BC4B24B0020A996 /* PDF Generation */ = {
+			isa = PBXGroup;
+			children = (
+				B3761ECE1BC4BC980020A996 /* PDFViewController.h */,
+				B3761ECF1BC4BC980020A996 /* PDFViewController.m */,
+				B3761ED31BC4C2DE0020A996 /* PDFRenderer.h */,
+				B3761ED41BC4C2DE0020A996 /* PDFRenderer.m */,
+			);
+			name = "PDF Generation";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B3761EDB1BC4DDFC0020A996 /* CorePlotHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				B3761EDC1BC4DDFC0020A996 /* CorePlot-CocoaTouch.h */,
+				B3761EDD1BC4DDFC0020A996 /* CPTAnimation.h */,
+				B3761EDE1BC4DDFC0020A996 /* CPTAnimationOperation.h */,
+				B3761EDF1BC4DDFC0020A996 /* CPTAnimationPeriod.h */,
+				B3761EE01BC4DDFC0020A996 /* CPTAnnotation.h */,
+				B3761EE11BC4DDFC0020A996 /* CPTAnnotationHostLayer.h */,
+				B3761EE21BC4DDFC0020A996 /* CPTAxis.h */,
+				B3761EE31BC4DDFC0020A996 /* CPTAxisLabel.h */,
+				B3761EE41BC4DDFC0020A996 /* CPTAxisLabelGroup.h */,
+				B3761EE51BC4DDFC0020A996 /* CPTAxisSet.h */,
+				B3761EE61BC4DDFC0020A996 /* CPTAxisTitle.h */,
+				B3761EE71BC4DDFC0020A996 /* CPTBarPlot.h */,
+				B3761EE81BC4DDFD0020A996 /* CPTBorderedLayer.h */,
+				B3761EE91BC4DDFD0020A996 /* CPTCalendarFormatter.h */,
+				B3761EEA1BC4DDFD0020A996 /* CPTColor.h */,
+				B3761EEB1BC4DDFD0020A996 /* CPTColorSpace.h */,
+				B3761EEC1BC4DDFD0020A996 /* CPTConstraints.h */,
+				B3761EED1BC4DDFD0020A996 /* CPTDataSourceTestCase.h */,
+				B3761EEE1BC4DDFD0020A996 /* CPTDebugQuickLook.h */,
+				B3761EEF1BC4DDFD0020A996 /* CPTDefinitions.h */,
+				B3761EF01BC4DDFD0020A996 /* CPTDerivedXYGraph.h */,
+				B3761EF11BC4DDFD0020A996 /* CPTExceptions.h */,
+				B3761EF21BC4DDFD0020A996 /* CPTFill.h */,
+				B3761EF31BC4DDFD0020A996 /* CPTFunctionDataSource.h */,
+				B3761EF41BC4DDFD0020A996 /* CPTGradient.h */,
+				B3761EF51BC4DDFD0020A996 /* CPTGraph.h */,
+				B3761EF61BC4DDFD0020A996 /* CPTGraphHostingView.h */,
+				B3761EF71BC4DDFD0020A996 /* CPTGridLineGroup.h */,
+				B3761EF81BC4DDFD0020A996 /* CPTGridLines.h */,
+				B3761EF91BC4DDFD0020A996 /* CPTImage.h */,
+				B3761EFA1BC4DDFD0020A996 /* CPTLayer.h */,
+				B3761EFB1BC4DDFD0020A996 /* CPTLayerAnnotation.h */,
+				B3761EFC1BC4DDFD0020A996 /* CPTLegend.h */,
+				B3761EFD1BC4DDFD0020A996 /* CPTLegendEntry.h */,
+				B3761EFE1BC4DDFD0020A996 /* CPTLimitBand.h */,
+				B3761EFF1BC4DDFD0020A996 /* CPTLineCap.h */,
+				B3761F001BC4DDFD0020A996 /* CPTLineStyle.h */,
+				B3761F011BC4DDFD0020A996 /* CPTMutableLineStyle.h */,
+				B3761F021BC4DDFD0020A996 /* CPTMutableNumericData+TypeConversion.h */,
+				B3761F031BC4DDFD0020A996 /* CPTMutableNumericData.h */,
+				B3761F041BC4DDFD0020A996 /* CPTMutablePlotRange.h */,
+				B3761F051BC4DDFD0020A996 /* CPTMutableShadow.h */,
+				B3761F061BC4DDFD0020A996 /* CPTMutableTextStyle.h */,
+				B3761F071BC4DDFD0020A996 /* CPTNumericData+TypeConversion.h */,
+				B3761F081BC4DDFD0020A996 /* CPTNumericData.h */,
+				B3761F091BC4DDFD0020A996 /* CPTNumericDataType.h */,
+				B3761F0A1BC4DDFD0020A996 /* CPTPathExtensions.h */,
+				B3761F0B1BC4DDFD0020A996 /* CPTPieChart.h */,
+				B3761F0C1BC4DDFD0020A996 /* CPTPlatformSpecificCategories.h */,
+				B3761F0D1BC4DDFD0020A996 /* CPTPlatformSpecificDefines.h */,
+				B3761F0E1BC4DDFD0020A996 /* CPTPlatformSpecificFunctions.h */,
+				B3761F0F1BC4DDFD0020A996 /* CPTPlot.h */,
+				B3761F101BC4DDFD0020A996 /* CPTPlotArea.h */,
+				B3761F111BC4DDFD0020A996 /* CPTPlotAreaFrame.h */,
+				B3761F121BC4DDFD0020A996 /* CPTPlotGroup.h */,
+				B3761F131BC4DDFD0020A996 /* CPTPlotRange.h */,
+				B3761F141BC4DDFD0020A996 /* CPTPlotSpace.h */,
+				B3761F151BC4DDFD0020A996 /* CPTPlotSpaceAnnotation.h */,
+				B3761F161BC4DDFD0020A996 /* CPTPlotSymbol.h */,
+				B3761F171BC4DDFD0020A996 /* CPTRangePlot.h */,
+				B3761F181BC4DDFD0020A996 /* CPTResponder.h */,
+				B3761F191BC4DDFD0020A996 /* CPTScatterPlot.h */,
+				B3761F1A1BC4DDFD0020A996 /* CPTShadow.h */,
+				B3761F1B1BC4DDFD0020A996 /* CPTTestCase.h */,
+				B3761F1C1BC4DDFD0020A996 /* CPTTextLayer.h */,
+				B3761F1D1BC4DDFD0020A996 /* CPTTextStyle.h */,
+				B3761F1E1BC4DDFD0020A996 /* CPTTextStylePlatformSpecific.h */,
+				B3761F1F1BC4DDFD0020A996 /* CPTTheme.h */,
+				B3761F201BC4DDFD0020A996 /* CPTTimeFormatter.h */,
+				B3761F211BC4DDFD0020A996 /* CPTTradingRangePlot.h */,
+				B3761F221BC4DDFD0020A996 /* CPTUtilities.h */,
+				B3761F231BC4DDFD0020A996 /* CPTXYAxis.h */,
+				B3761F241BC4DDFD0020A996 /* CPTXYAxisSet.h */,
+				B3761F251BC4DDFD0020A996 /* CPTXYGraph.h */,
+				B3761F261BC4DDFD0020A996 /* CPTXYPlotSpace.h */,
+				B3761F271BC4DDFD0020A996 /* mainpage.h */,
+				B3761F281BC4DDFD0020A996 /* NSCoderExtensions.h */,
+				B3761F291BC4DDFD0020A996 /* NSDecimalNumberExtensions.h */,
+				B3761F2A1BC4DDFD0020A996 /* NSNumberExtensions.h */,
+			);
+			path = CorePlotHeaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AF9E38E1A85CCF700A8830A /* Capstone2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF9E3B21A85CCF700A8830A /* Build configuration list for PBXNativeTarget "Capstone2" */;
+			buildPhases = (
+				0AF9E38B1A85CCF700A8830A /* Sources */,
+				0AF9E38C1A85CCF700A8830A /* Frameworks */,
+				0AF9E38D1A85CCF700A8830A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Capstone2;
+			productName = Capstone2;
+			productReference = 0AF9E38F1A85CCF700A8830A /* Capstone2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AF9E3A71A85CCF700A8830A /* Capstone2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF9E3B51A85CCF700A8830A /* Build configuration list for PBXNativeTarget "Capstone2Tests" */;
+			buildPhases = (
+				0AF9E3A41A85CCF700A8830A /* Sources */,
+				0AF9E3A51A85CCF700A8830A /* Frameworks */,
+				0AF9E3A61A85CCF700A8830A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AF9E3AA1A85CCF700A8830A /* PBXTargetDependency */,
+			);
+			name = Capstone2Tests;
+			productName = Capstone2Tests;
+			productReference = 0AF9E3A81A85CCF700A8830A /* Capstone2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AF9E3871A85CCF700A8830A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Johnathan Cornella";
+				TargetAttributes = {
+					0AF9E38E1A85CCF700A8830A = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = AH8HY7YJ6W;
+					};
+					0AF9E3A71A85CCF700A8830A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 0AF9E38E1A85CCF700A8830A;
+					};
+				};
+			};
+			buildConfigurationList = 0AF9E38A1A85CCF700A8830A /* Build configuration list for PBXProject "Capstone2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				English,
+			);
+			mainGroup = 0AF9E3861A85CCF700A8830A;
+			productRefGroup = 0AF9E3901A85CCF700A8830A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AF9E38E1A85CCF700A8830A /* Capstone2 */,
+				0AF9E3A71A85CCF700A8830A /* Capstone2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AF9E38D1A85CCF700A8830A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF9E39E1A85CCF700A8830A /* Main.storyboard in Resources */,
+				0A6E670C1BBF2ABC00F20CF2 /* Caduceus-32.png in Resources */,
+				0A6E670A1BBF299800F20CF2 /* Heart Monitor-32.png in Resources */,
+				B465C0CF1A9EA1B2008EEB45 /* Image.png in Resources */,
+				0A6E67081BBF290700F20CF2 /* Heart Monitor-50-2.png in Resources */,
+				B3FD4C251BC5F2E400801771 /* Stop Filled-50.png in Resources */,
+				0AF9E3A31A85CCF700A8830A /* LaunchScreen.xib in Resources */,
+				B3FD4C231BC5F23100801771 /* Play Filled-50.png in Resources */,
+				B3761F2C1BC4F4010020A996 /* Icon-76.png in Resources */,
+				0A6E67101BBF2CF800F20CF2 /* Medical Doctor-32.png in Resources */,
+				0A6E670E1BBF2C4F00F20CF2 /* Bar Chart-32.png in Resources */,
+				B41772C71A9566E5000EC356 /* doctor-with-ipad.jpg in Resources */,
+				B3761F2E1BC4F4160020A996 /* Icon-76@2x.png in Resources */,
+				0AF9E3A01A85CCF700A8830A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9E3A61A85CCF700A8830A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AF9E38B1A85CCF700A8830A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB409C4B1BB5C5390086483F /* TabBarViewController.m in Sources */,
+				0AF9EB931A8C0D7F00A8830A /* AppDelegate.m in Sources */,
+				0AF9EB961A8C0D7F00A8830A /* RfduinoManager.m in Sources */,
+				BB409C481BB5C1BD0086483F /* CoreData.xcdatamodeld in Sources */,
+				0AF9EB971A8C0D7F00A8830A /* ScanViewController.m in Sources */,
+				0AF9EB951A8C0D7F00A8830A /* RFduino.m in Sources */,
+				B32EF41B1BBCE98600CDF80F /* Co2Value.m in Sources */,
+				B3761ED01BC4BC980020A996 /* PDFViewController.m in Sources */,
+				BB409C541BB5C7810086483F /* DoctorInformationViewController.m in Sources */,
+				0AF9EB9A1A8C102B00A8830A /* AppViewController.m in Sources */,
+				BBDA8D941BB600A600D531CE /* RFduinoObject.m in Sources */,
+				0AF9EB941A8C0D7F00A8830A /* CustomCellBackground.m in Sources */,
+				0AF9E3951A85CCF700A8830A /* main.m in Sources */,
+				B3761ED51BC4C2DE0020A996 /* PDFRenderer.m in Sources */,
+				BB409C511BB5C73F0086483F /* LongTermGraphViewController.m in Sources */,
+				B32EF4181BBCE80E00CDF80F /* Person.m in Sources */,
+				BB409C451BB5BC590086483F /* AppData.m in Sources */,
+				BB409C4E1BB5C5A50086483F /* PatientInformationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF9E3A41A85CCF700A8830A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF9E3AF1A85CCF700A8830A /* Capstone2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AF9E3AA1A85CCF700A8830A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AF9E38E1A85CCF700A8830A /* Capstone2 */;
+			targetProxy = 0AF9E3A91A85CCF700A8830A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AF9E39C1A85CCF700A8830A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF9E39D1A85CCF700A8830A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0AF9E3A11A85CCF700A8830A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF9E3A21A85CCF700A8830A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AF9E3B01A85CCF700A8830A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AF9E3B11A85CCF700A8830A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AF9E3B31A85CCF700A8830A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Capstone2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arizona-State.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		0AF9E3B41A85CCF700A8830A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Capstone2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arizona-State.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		0AF9E3B61A85CCF700A8830A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Capstone2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arizona-State.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone2.app/Capstone2";
+			};
+			name = Debug;
+		};
+		0AF9E3B71A85CCF700A8830A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Capstone2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arizona-State.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone2.app/Capstone2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AF9E38A1A85CCF700A8830A /* Build configuration list for PBXProject "Capstone2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF9E3B01A85CCF700A8830A /* Debug */,
+				0AF9E3B11A85CCF700A8830A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AF9E3B21A85CCF700A8830A /* Build configuration list for PBXNativeTarget "Capstone2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF9E3B31A85CCF700A8830A /* Debug */,
+				0AF9E3B41A85CCF700A8830A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AF9E3B51A85CCF700A8830A /* Build configuration list for PBXNativeTarget "Capstone2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF9E3B61A85CCF700A8830A /* Debug */,
+				0AF9E3B71A85CCF700A8830A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB409C461BB5C1BD0086483F /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB409C471BB5C1BD0086483F /* CoreData.xcdatamodel */,
+			);
+			currentVersion = BB409C471BB5C1BD0086483F /* CoreData.xcdatamodel */;
+			name = CoreData.xcdatamodeld;
+			path = rfduino/CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0AF9E3871A85CCF700A8830A /* Project object */;
+}

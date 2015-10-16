@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EFCB3BAE-5367-4572-A3DA-9343AD5B1761</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9CD8673D86988AD90B4A7D179BE55B1950C05ADB</key>
+		<string>https://github.com/jcornella11/iPad-Capnogrpahy-with-Core-Data.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iPadCapnography-Core-Data-John 3/Capstone2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9CD8673D86988AD90B4A7D179BE55B1950C05ADB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jcornella11/iPad-Capnogrpahy-with-Core-Data.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9CD8673D86988AD90B4A7D179BE55B1950C05ADB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9CD8673D86988AD90B4A7D179BE55B1950C05ADB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iPad-Capnogrpahy-with-Core-Data</string>
+		</dict>
+	</array>
+</dict>
+</plist>
