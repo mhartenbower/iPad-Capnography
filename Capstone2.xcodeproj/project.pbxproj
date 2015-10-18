@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5258F01BD35A34005611C0 /* TextInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5258EF1BD35A34005611C0 /* TextInputCell.m */; settings = {ASSET_TAGS = (); }; };
 		0A6E67081BBF290700F20CF2 /* Heart Monitor-50-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E67071BBF290700F20CF2 /* Heart Monitor-50-2.png */; };
 		0A6E670A1BBF299800F20CF2 /* Heart Monitor-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E67091BBF299800F20CF2 /* Heart Monitor-32.png */; };
 		0A6E670C1BBF2ABC00F20CF2 /* Caduceus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6E670B1BBF2ABC00F20CF2 /* Caduceus-32.png */; };
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A5258EE1BD35A34005611C0 /* TextInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputCell.h; sourceTree = "<group>"; };
+		0A5258EF1BD35A34005611C0 /* TextInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputCell.m; sourceTree = "<group>"; };
 		0A6E67071BBF290700F20CF2 /* Heart Monitor-50-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Heart Monitor-50-2.png"; sourceTree = "<group>"; };
 		0A6E67091BBF299800F20CF2 /* Heart Monitor-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Heart Monitor-32.png"; sourceTree = "<group>"; };
 		0A6E670B1BBF2ABC00F20CF2 /* Caduceus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Caduceus-32.png"; sourceTree = "<group>"; };
@@ -359,6 +362,8 @@
 				BB409C4D1BB5C5A50086483F /* PatientInformationViewController.m */,
 				BB409C491BB5C5390086483F /* TabBarViewController.h */,
 				BB409C4A1BB5C5390086483F /* TabBarViewController.m */,
+				0A5258EE1BD35A34005611C0 /* TextInputCell.h */,
+				0A5258EF1BD35A34005611C0 /* TextInputCell.m */,
 			);
 			name = "View Controllers";
 			path = ..;
@@ -520,6 +525,7 @@
 		0AF9E3871A85CCF700A8830A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Johnathan Cornella";
 				TargetAttributes = {
@@ -603,6 +609,7 @@
 				0AF9EB941A8C0D7F00A8830A /* CustomCellBackground.m in Sources */,
 				0AF9E3951A85CCF700A8830A /* main.m in Sources */,
 				B3761ED51BC4C2DE0020A996 /* PDFRenderer.m in Sources */,
+				0A5258F01BD35A34005611C0 /* TextInputCell.m in Sources */,
 				BB409C511BB5C73F0086483F /* LongTermGraphViewController.m in Sources */,
 				B32EF4181BBCE80E00CDF80F /* Person.m in Sources */,
 				BB409C451BB5BC590086483F /* AppData.m in Sources */,
@@ -733,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -747,6 +755,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Arizona-State.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Capstone2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -754,6 +764,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -768,6 +779,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Arizona-State.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Capstone2-Bridging-Header.h";
 			};
 			name = Release;
 		};
