@@ -21,9 +21,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="Ga9-I7-b1S" kind="relationship" relationship="viewControllers" id="FMa-lc-VLM"/>
-                        <segue destination="2Ba-dp-a0C" kind="relationship" relationship="viewControllers" id="2A0-Ie-sUA"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="X1b-B7-1Gg"/>
                         <segue destination="Cjw-T6-a0B" kind="relationship" relationship="viewControllers" id="I1o-Yz-D3y"/>
+                        <segue destination="FcP-HS-Dif" kind="relationship" relationship="viewControllers" id="g3L-Ab-7c8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AO-zs-7rk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -148,71 +148,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vr6-jY-g9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="171" y="-434"/>
-        </scene>
-        <!--Doctor Information-->
-        <scene sceneID="AsK-y6-AGE">
-            <objects>
-                <viewController id="2Ba-dp-a0C" customClass="DoctorInformationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gdN-BE-9ye"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ump-Uw-7Uh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BFo-nX-XQE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hvG-Ix-Dc1">
-                                <rect key="frame" x="20" y="20" width="550" height="515"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextInputCell" id="k81-dd-jIn" customClass="TextInputCell">
-                                        <rect key="frame" x="0.0" y="28" width="550" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k81-dd-jIn" id="Fcq-in-f1I">
-                                            <rect key="frame" x="0.0" y="0.0" width="550" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RS1-SA-yuo">
-                                                    <rect key="frame" x="0.0" y="7" width="550" height="30"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstItem="RS1-SA-yuo" firstAttribute="centerY" secondItem="Fcq-in-f1I" secondAttribute="centerY" id="8Yb-zu-kD5"/>
-                                                <constraint firstAttribute="trailing" secondItem="RS1-SA-yuo" secondAttribute="trailing" id="9W3-Ny-Vfr"/>
-                                                <constraint firstItem="RS1-SA-yuo" firstAttribute="leading" secondItem="Fcq-in-f1I" secondAttribute="leading" id="oC0-Xx-hkb"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                        <connections>
-                                            <outlet property="textField" destination="RS1-SA-yuo" id="k9S-Wf-8sd"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="2Ba-dp-a0C" id="HAC-Oy-Ddp"/>
-                                    <outlet property="delegate" destination="2Ba-dp-a0C" id="gjY-s7-aj9"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Ump-Uw-7Uh" firstAttribute="top" secondItem="hvG-Ix-Dc1" secondAttribute="bottom" constant="16" id="1iQ-zv-dqa"/>
-                            <constraint firstItem="hvG-Ix-Dc1" firstAttribute="top" secondItem="gdN-BE-9ye" secondAttribute="bottom" id="KsP-BX-2Lw"/>
-                            <constraint firstItem="hvG-Ix-Dc1" firstAttribute="leading" secondItem="BFo-nX-XQE" secondAttribute="leadingMargin" id="aDa-Dc-Tpr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hvG-Ix-Dc1" secondAttribute="trailing" constant="10" id="qCj-A8-9YU"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Doctor Information" image="Medical Doctor-32.png" id="syo-ct-HpG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rTA-nK-ghg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="171" y="1540"/>
         </scene>
         <!--Real Time Graph-->
         <scene sceneID="tne-QT-ifu">
@@ -461,6 +396,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3O-Sh-T6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="171" y="887"/>
+        </scene>
+        <!--PatientInformation(New)-->
+        <scene sceneID="Z8R-eL-CwH">
+            <objects>
+                <tableViewController id="FcP-HS-Dif" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ie1-4b-MwV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="QjK-a6-Qan">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1bK-rm-yLh">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1bK-rm-yLh" id="K9t-Mr-K9h">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tI6-U5-a9v">
+                                        <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tI6-U5-a9v" id="20C-dH-PPS">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cmP-kz-XhF">
+                                        <rect key="frame" x="0.0" y="88" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cmP-kz-XhF" id="E66-7h-pvY">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="FcP-HS-Dif" id="Xq2-rm-LK7"/>
+                            <outlet property="delegate" destination="FcP-HS-Dif" id="Sbu-kl-jal"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="PatientInformation(New)" image="Medical Doctor-32.png" id="W1F-7p-1bp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwl-ti-2Cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="1555"/>
         </scene>
     </scenes>
     <resources>
