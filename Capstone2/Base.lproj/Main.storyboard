@@ -400,7 +400,7 @@
         <!--PatientInformation(New)-->
         <scene sceneID="Z8R-eL-CwH">
             <objects>
-                <tableViewController id="FcP-HS-Dif" sceneMemberID="viewController">
+                <tableViewController id="FcP-HS-Dif" customClass="NewPatientInformation" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ie1-4b-MwV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
