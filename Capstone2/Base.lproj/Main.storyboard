@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFt-u6-Swr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFt-u6-Swr">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -67,14 +67,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8t-Mw-daV">
-                                <rect key="frame" x="126" y="276" width="150" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Save Data"/>
-                                <connections>
-                                    <action selector="saveData:" destination="Ga9-I7-b1S" eventType="touchUpInside" id="Pd0-zZ-rzE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naT-Vf-A3Z">
                                 <rect key="frame" x="177" y="380" width="48" height="30"/>
                                 <animations/>
@@ -105,6 +97,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8t-Mw-daV">
+                                <rect key="frame" x="126" y="276" width="150" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Save Data"/>
+                                <connections>
+                                    <action selector="saveData:" destination="Ga9-I7-b1S" eventType="touchUpInside" id="Pd0-zZ-rzE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -595,6 +595,9 @@
                                                     <rect key="frame" x="211" y="7" width="145" height="30"/>
                                                     <animations/>
                                                     <state key="normal" title="Save Data"/>
+                                                    <connections>
+                                                        <action selector="saveData:" destination="FcP-HS-Dif" eventType="touchUpInside" id="3nW-G1-QR1"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <animations/>
@@ -610,6 +613,17 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="PatientInformation(New)" image="Medical Doctor-32.png" id="W1F-7p-1bp"/>
+                    <connections>
+                        <outlet property="dateofBirth" destination="VvJ-V4-uJo" id="YBa-Dw-IT8"/>
+                        <outlet property="doctorEmail" destination="CKO-f7-aTR" id="Bdc-xa-hwZ"/>
+                        <outlet property="doctorName" destination="Mqp-9C-Wy0" id="3q4-oM-GMr"/>
+                        <outlet property="firstName" destination="YWh-Je-xgb" id="71Q-wU-moj"/>
+                        <outlet property="lastName" destination="NCo-Vx-H8l" id="eiY-ub-E3G"/>
+                        <outlet property="medicalID" destination="KFd-pZ-ptQ" id="uyG-pm-Fvw"/>
+                        <outlet property="patientEmail" destination="WHK-Op-57j" id="DnH-9e-ru8"/>
+                        <outlet property="patientMessageText" destination="Y1t-yH-qxJ" id="aag-Js-yJJ"/>
+                        <outlet property="patientPhoneNumber" destination="DiS-3v-8Dd" id="tpI-ou-f5H"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwl-ti-2Cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,4 +10,6 @@
 
 @implementation NewPatientInformation
 
+- (IBAction)saveData:(id)sender {
+}
 @end
