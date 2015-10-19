@@ -88,7 +88,8 @@
     //Method to Draw Text using a Cordinate System. Will use to draw all the text for the patient information.
     //Need to figure out necessary cordinate systems.
 
-    NSString* textToDraw = joinString;
+    NSString *textToDraw = firstName;
+    
     CFStringRef stringRef = (__bridge CFStringRef)textToDraw;
     // Prepare the text using a Core Text Framesetter
     CFAttributedStringRef currentText = CFAttributedStringCreate(NULL, stringRef, NULL);
