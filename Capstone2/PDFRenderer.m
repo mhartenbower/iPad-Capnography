@@ -27,7 +27,7 @@
     
     //Draw the text from the method that it shown bellow
     
-    [self drawText];
+    //[self drawText];
     
     
     
@@ -41,7 +41,7 @@
     // Close the PDF context and write the contents out.
     
     int xOrigin = 50;
-    int yOrigin = 300;
+    int yOrigin = 100;
     
     int rowHeight = 50;
     int columnWidth = 120;
@@ -308,6 +308,7 @@
     NSArray* patientInfo2 = [NSArray arrayWithObjects:@"Date of Birth", dateOfBirth, @"MedicalID#", medicalID, nil];
     NSArray* patientInfo3 = [NSArray arrayWithObjects:@"Patient Email", patientEmail, @"Patient Phone", patientPhone, nil];
     NSArray* patientInfo4 = [NSArray arrayWithObjects:@"Doctor Email", doctorEmail, @"Doctor Name", doctorName, nil];
+    //NSArray* patientInfo5 = [NSArray arrayWithObjects:@"Blank", @"Blank", @"Blank", @"Blank", nil];
 
     
     NSArray* allInfo = [NSArray arrayWithObjects:patientInfo1, patientInfo2, patientInfo3, patientInfo4, nil];
