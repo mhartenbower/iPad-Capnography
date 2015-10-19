@@ -42,40 +42,7 @@
 
 - (IBAction)saveData:(id)sender {
     
-    //Code to Save Values based on User and Device Input
     
-    AppDelegate *appDelegate =[[UIApplication sharedApplication] delegate];
-    NSError *error;
-    
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    
-    
-    
-    NSManagedObject *newPerson;
-    newPerson = [NSEntityDescription
-                 insertNewObjectForEntityForName:@"Person"
-                 inManagedObjectContext:context];
-    
-    //Create the custom objects NSManaged Objects that are enititys in the Data Model. Entities for CO2 value and Person.
-    
-    
-    //Set the values for each of these using whatever text is put into the view controller.
-    
-    [newPerson setValue: _firstName.text forKey:@"firstName"];
-    [newPerson setValue: _lastName.text forKey:@"lastName"];
-    [newPerson setValue: _dateOfBirth.text forKey:@"dateOfBirth"];
-    [newPerson setValue: _medicalID.text forKey:@"medicalID"];
-    
-    //Use key value coding to set the values to Core Data
-    
-    
-    _firstName.text = @"";
-    _lastName.text = @"";
-    _dateOfBirth.text = @"";
-    _medicalID.text = @"";
-    
-    
-    [newPerson.managedObjectContext save:&error];
     
 }
 
