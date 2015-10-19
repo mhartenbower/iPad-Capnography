@@ -17,6 +17,20 @@
 +(void)drawPDF:(NSString*)fileName;
 +(void)drawText;
 +(void)drawImage:(UIImage*)image inRect:(CGRect)rect;
++(void)drawTextbox:(NSString*)textToDraw inFrame:(CGRect)frameRect;
+
++(void)drawTableAt:(CGPoint)origin
+     withRowHeight:(int)rowHeight
+    andColumnWidth:(int)columnWidth
+       andRowCount:(int)numberOfRows
+    andColumnCount:(int)numberOfColumns;
+
+
++(void)drawTableDataAt:(CGPoint)origin
+         withRowHeight:(int)rowHeight
+        andColumnWidth:(int)columnWidth
+           andRowCount:(int)numberOfRows
+        andColumnCount:(int)numberOfColumns;
 
 
 @end

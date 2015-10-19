@@ -30,6 +30,7 @@
     [self drawText];
     
     
+    
     //UIImage* logo = [UIImage imageNamed:@"Mayo-clinic-logo.png"];
     //CGRect frame = CGRectMake(20, 100, 300, 60);
     
@@ -38,6 +39,22 @@
     //Use this Code to Draw Images will eventually be used to render the graph image.
     
     // Close the PDF context and write the contents out.
+    
+    int xOrigin = 50;
+    int yOrigin = 300;
+    
+    int rowHeight = 50;
+    int columnWidth = 120;
+    
+    int numberOfRows = 7;
+    int numberOfColumns = 4;
+    
+    [self drawTableAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
+    
+    [self drawTableDataAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
+    
+    
+    
     UIGraphicsEndPDFContext();
 }
 
@@ -158,5 +175,79 @@
     
 }
 
+
++(void)drawTableDataAt:(CGPoint)origin
+         withRowHeight:(int)rowHeight
+        andColumnWidth:(int)columnWidth
+           andRowCount:(int)numberOfRows
+        andColumnCount:(int)numberOfColumns
+{
+    int padding = 10;
+    
+    NSArray* headers = [NSArray arrayWithObjects:@"Quantity", @"Description", @"Unit price", @"Total", nil];
+    NSArray* invoiceInfo1 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
+    NSArray* invoiceInfo2 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
+    NSArray* invoiceInfo3 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
+    NSArray* invoiceInfo4 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
+    
+    NSArray* allInfo = [NSArray arrayWithObjects:headers, invoiceInfo1, invoiceInfo2, invoiceInfo3, invoiceInfo4, nil];
+    
+    for(int i = 0; i < [allInfo count]; i++)
+    {
+        NSArray* infoToDraw = [allInfo objectAtIndex:i];
+        
+        for (int j = 0; j < numberOfColumns; j++)
+        {
+            int newOriginX = origin.x + (j*columnWidth);
+            int newOriginY = origin.y + ((i+1)*rowHeight);
+            
+            CGRect frame = CGRectMake(newOriginX + padding, newOriginY + padding, columnWidth, rowHeight);
+            
+            [self drawTextbox:[infoToDraw objectAtIndex:j] inFrame:frame];
+        }        
+    }    
+}
+
++(void)drawTextbox:(NSString*)textToDraw inFrame:(CGRect)frameRect
+{
+    
+    CFStringRef stringRef = (__bridge CFStringRef)textToDraw;
+    // Prepare the text using a Core Text Framesetter
+    CFAttributedStringRef currentText = CFAttributedStringCreate(NULL, stringRef, NULL);
+    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString(currentText);
+    
+    
+    CGMutablePathRef framePath = CGPathCreateMutable();
+    CGPathAddRect(framePath, NULL, frameRect);
+    
+    // Get the frame that will do the rendering.
+    CFRange currentRange = CFRangeMake(0, 0);
+    CTFrameRef frameRef = CTFramesetterCreateFrame(framesetter, currentRange, framePath, NULL);
+    CGPathRelease(framePath);
+    
+    // Get the graphics context.
+    CGContextRef    currentContext = UIGraphicsGetCurrentContext();
+    
+    // Put the text matrix into a known state. This ensures
+    // that no old scaling factors are left in place.
+    CGContextSetTextMatrix(currentContext, CGAffineTransformIdentity);
+    
+    
+    // Core Text draws from the bottom-left corner up, so flip
+    // the current transform prior to drawing.
+    CGContextTranslateCTM(currentContext, 0, frameRect.origin.y*2);
+    CGContextScaleCTM(currentContext, 1.0, -1.0);
+    
+    // Draw the frame.
+    CTFrameDraw(frameRef, currentContext);
+    
+    CGContextScaleCTM(currentContext, 1.0, -1.0);
+    CGContextTranslateCTM(currentContext, 0, (-1)*frameRect.origin.y*2);
+    
+    
+    CFRelease(frameRef);
+    CFRelease(stringRef);
+    CFRelease(framesetter);
+}
 
 @end
