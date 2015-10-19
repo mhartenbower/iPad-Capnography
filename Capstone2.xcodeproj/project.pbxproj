@@ -82,6 +82,11 @@
 		B3E7A75A1BD47D62004E76E1 /* Reader-Print@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E7A73F1BD47D62004E76E1 /* Reader-Print@2x.png */; };
 		B3E7A75B1BD47D62004E76E1 /* Reader-Thumbs.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E7A7401BD47D62004E76E1 /* Reader-Thumbs.png */; };
 		B3E7A75C1BD47D62004E76E1 /* Reader-Thumbs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E7A7411BD47D62004E76E1 /* Reader-Thumbs@2x.png */; };
+		B3E7A75E1BD48033004E76E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E7A75D1BD48033004E76E1 /* CoreGraphics.framework */; };
+		B3E7A7601BD4803F004E76E1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E7A75F1BD4803F004E76E1 /* CoreFoundation.framework */; };
+		B3E7A7621BD480A6004E76E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E7A7611BD480A6004E76E1 /* Foundation.framework */; };
+		B3E7A7641BD480E8004E76E1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E7A7631BD480E8004E76E1 /* MessageUI.framework */; };
+		B3E7A7661BD480F1004E76E1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E7A7651BD480F1004E76E1 /* ImageIO.framework */; };
 		B3FD4C231BC5F23100801771 /* Play Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FD4C221BC5F23100801771 /* Play Filled-50.png */; };
 		B3FD4C251BC5F2E400801771 /* Stop Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FD4C241BC5F2E400801771 /* Stop Filled-50.png */; };
 		B41772C71A9566E5000EC356 /* doctor-with-ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B41772C61A9566E5000EC356 /* doctor-with-ipad.jpg */; };
@@ -299,6 +304,11 @@
 		B3E7A73F1BD47D62004E76E1 /* Reader-Print@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Print@2x.png"; sourceTree = "<group>"; };
 		B3E7A7401BD47D62004E76E1 /* Reader-Thumbs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Thumbs.png"; sourceTree = "<group>"; };
 		B3E7A7411BD47D62004E76E1 /* Reader-Thumbs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Thumbs@2x.png"; sourceTree = "<group>"; };
+		B3E7A75D1BD48033004E76E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B3E7A75F1BD4803F004E76E1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B3E7A7611BD480A6004E76E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B3E7A7631BD480E8004E76E1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B3E7A7651BD480F1004E76E1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		B3FD4C221BC5F23100801771 /* Play Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play Filled-50.png"; sourceTree = "<group>"; };
 		B3FD4C241BC5F2E400801771 /* Stop Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stop Filled-50.png"; sourceTree = "<group>"; };
 		B41772C61A9566E5000EC356 /* doctor-with-ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "doctor-with-ipad.jpg"; sourceTree = "<group>"; };
@@ -325,6 +335,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E7A7661BD480F1004E76E1 /* ImageIO.framework in Frameworks */,
+				B3E7A7641BD480E8004E76E1 /* MessageUI.framework in Frameworks */,
+				B3E7A7621BD480A6004E76E1 /* Foundation.framework in Frameworks */,
+				B3E7A7601BD4803F004E76E1 /* CoreFoundation.framework in Frameworks */,
+				B3E7A75E1BD48033004E76E1 /* CoreGraphics.framework in Frameworks */,
 				B3761ED21BC4C1C40020A996 /* CoreText.framework in Frameworks */,
 				B32EF4201BBD018800CDF80F /* CoreData.framework in Frameworks */,
 				BB0B97E91A9E499900A41AE3 /* Accelerate.framework in Frameworks */,
@@ -360,6 +375,11 @@
 		0AF9E3861A85CCF700A8830A = {
 			isa = PBXGroup;
 			children = (
+				B3E7A7651BD480F1004E76E1 /* ImageIO.framework */,
+				B3E7A7631BD480E8004E76E1 /* MessageUI.framework */,
+				B3E7A7611BD480A6004E76E1 /* Foundation.framework */,
+				B3E7A75F1BD4803F004E76E1 /* CoreFoundation.framework */,
+				B3E7A75D1BD48033004E76E1 /* CoreGraphics.framework */,
 				B3761ED61BC4D8EA0020A996 /* libCorePlot-CocoaTouch.a */,
 				B3761EDB1BC4DDFC0020A996 /* CorePlotHeaders */,
 				B3761ED11BC4C1C40020A996 /* CoreText.framework */,
