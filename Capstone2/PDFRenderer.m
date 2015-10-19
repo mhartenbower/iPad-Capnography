@@ -46,7 +46,7 @@
     int rowHeight = 50;
     int columnWidth = 120;
     
-    int numberOfRows = 7;
+    int numberOfRows = 4;
     int numberOfColumns = 4;
     
     [self drawTableAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
@@ -260,15 +260,57 @@
            andRowCount:(int)numberOfRows
         andColumnCount:(int)numberOfColumns
 {
+    
+    AppDelegate *appDelegate =
+    [[UIApplication sharedApplication] delegate];
+    
+    NSManagedObjectContext *context =
+    [appDelegate managedObjectContext];
+    NSError *error;
+    
+    
+    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    
+    [request setEntity:entityDesc];
+    
+    //We probably don't need a predicate right now...
+    //NSPredicate *pred =
+    //[NSPredicate predicateWithFormat:@"(firstName = %@)"];
+    //[request setPredicate:pred];
+    
+    NSManagedObject *matches = nil;
+    NSArray *objects = [context executeFetchRequest:request
+                                              error:&error];
+    
+    NSString *firstName, *lastName, *dateOfBirth, *medicalID, *patientEmail, *patientPhone, *doctorEmail, *doctorName;
+    
+    if ([objects count] == 0) {
+        NSLog(@"No matches");
+    } else {
+        matches = objects[0];
+        firstName = [matches valueForKey:@"firstName"];
+        lastName = [matches valueForKey:@"lastName"];
+        dateOfBirth = [matches valueForKey:@"dateOfBirth"];
+        medicalID = [matches valueForKey:@"medicalID"];
+        patientEmail = [matches valueForKey:@"email"];
+        patientPhone = [matches valueForKey:@"phoneNumber"];
+        doctorEmail = [matches valueForKey:@"doctorEmail"];
+        doctorName = [matches valueForKey:@"doctorName"];
+        
+    }
+    
     int padding = 10;
     
-    NSArray* headers = [NSArray arrayWithObjects:@"Quantity", @"Description", @"Unit price", @"Total", nil];
-    NSArray* invoiceInfo1 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
-    NSArray* invoiceInfo2 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
-    NSArray* invoiceInfo3 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
-    NSArray* invoiceInfo4 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
+    //Takes Items that are from core data above and renders them in a chart. 
     
-    NSArray* allInfo = [NSArray arrayWithObjects:headers, invoiceInfo1, invoiceInfo2, invoiceInfo3, invoiceInfo4, nil];
+    NSArray* patientInfo1 = [NSArray arrayWithObjects:@"First Name", firstName, @"Last Name", lastName, nil];
+    NSArray* patientInfo2 = [NSArray arrayWithObjects:@"Date of Birth", dateOfBirth, @"MedicalID#", medicalID, nil];
+    NSArray* patientInfo3 = [NSArray arrayWithObjects:@"Patient Email", patientEmail, @"Patient Phone", patientPhone, nil];
+    NSArray* patientInfo4 = [NSArray arrayWithObjects:@"Doctor Email", doctorEmail, @"Doctor Name", doctorName, nil];
+
+    
+    NSArray* allInfo = [NSArray arrayWithObjects:patientInfo1, patientInfo2, patientInfo3, patientInfo4, nil];
     
     for(int i = 0; i < [allInfo count]; i++)
     {
