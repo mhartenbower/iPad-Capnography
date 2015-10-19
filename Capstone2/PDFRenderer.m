@@ -176,39 +176,8 @@
 }
 
 
-+(void)drawTableDataAt:(CGPoint)origin
-         withRowHeight:(int)rowHeight
-        andColumnWidth:(int)columnWidth
-           andRowCount:(int)numberOfRows
-        andColumnCount:(int)numberOfColumns
-{
-    int padding = 10;
-    
-    NSArray* headers = [NSArray arrayWithObjects:@"Quantity", @"Description", @"Unit price", @"Total", nil];
-    NSArray* invoiceInfo1 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
-    NSArray* invoiceInfo2 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
-    NSArray* invoiceInfo3 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
-    NSArray* invoiceInfo4 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
-    
-    NSArray* allInfo = [NSArray arrayWithObjects:headers, invoiceInfo1, invoiceInfo2, invoiceInfo3, invoiceInfo4, nil];
-    
-    for(int i = 0; i < [allInfo count]; i++)
-    {
-        NSArray* infoToDraw = [allInfo objectAtIndex:i];
-        
-        for (int j = 0; j < numberOfColumns; j++)
-        {
-            int newOriginX = origin.x + (j*columnWidth);
-            int newOriginY = origin.y + ((i+1)*rowHeight);
-            
-            CGRect frame = CGRectMake(newOriginX + padding, newOriginY + padding, columnWidth, rowHeight);
-            
-            [self drawTextbox:[infoToDraw objectAtIndex:j] inFrame:frame];
-        }        
-    }    
-}
 
-+(void)drawTextbox:(NSString*)textToDraw inFrame:(CGRect)frameRect
++(void)drawText:(NSString*)textToDraw inFrame:(CGRect)frameRect
 {
     
     CFStringRef stringRef = (__bridge CFStringRef)textToDraw;
@@ -248,6 +217,76 @@
     CFRelease(frameRef);
     CFRelease(stringRef);
     CFRelease(framesetter);
+}
+
++(void)drawTableAt:(CGPoint)origin
+     withRowHeight:(int)rowHeight
+    andColumnWidth:(int)columnWidth
+       andRowCount:(int)numberOfRows
+    andColumnCount:(int)numberOfColumns
+
+{
+    
+    for (int i = 0; i <= numberOfRows; i++) {
+        
+        int newOrigin = origin.y + (rowHeight*i);
+        
+        
+        CGPoint from = CGPointMake(origin.x, newOrigin);
+        CGPoint to = CGPointMake(origin.x + (numberOfColumns*columnWidth), newOrigin);
+        
+        [self drawLineFromPoint:from toPoint:to];
+        
+        
+    }
+    
+    for (int i = 0; i <= numberOfColumns; i++) {
+        
+        int newOrigin = origin.x + (columnWidth*i);
+        
+        
+        CGPoint from = CGPointMake(newOrigin, origin.y);
+        CGPoint to = CGPointMake(newOrigin, origin.y +(numberOfRows*rowHeight));
+        
+        [self drawLineFromPoint:from toPoint:to];
+        
+        
+    }
+}
+
++(void)drawTableDataAt:(CGPoint)origin
+         withRowHeight:(int)rowHeight
+        andColumnWidth:(int)columnWidth
+           andRowCount:(int)numberOfRows
+        andColumnCount:(int)numberOfColumns
+{
+    int padding = 10;
+    
+    NSArray* headers = [NSArray arrayWithObjects:@"Quantity", @"Description", @"Unit price", @"Total", nil];
+    NSArray* invoiceInfo1 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
+    NSArray* invoiceInfo2 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
+    NSArray* invoiceInfo3 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
+    NSArray* invoiceInfo4 = [NSArray arrayWithObjects:@"1", @"Development", @"$1000", @"$1000", nil];
+    
+    NSArray* allInfo = [NSArray arrayWithObjects:headers, invoiceInfo1, invoiceInfo2, invoiceInfo3, invoiceInfo4, nil];
+    
+    for(int i = 0; i < [allInfo count]; i++)
+    {
+        NSArray* infoToDraw = [allInfo objectAtIndex:i];
+        
+        for (int j = 0; j < numberOfColumns; j++)
+        {
+            
+            int newOriginX = origin.x + (j*columnWidth);
+            int newOriginY = origin.y + ((i+1)*rowHeight);
+            
+            CGRect frame = CGRectMake(newOriginX + padding, newOriginY + padding, columnWidth, rowHeight);
+            
+            
+            [self drawText:[infoToDraw objectAtIndex:j] inFrame:frame];
+        }
+        
+    }
 }
 
 @end
