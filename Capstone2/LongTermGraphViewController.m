@@ -17,8 +17,6 @@
 @synthesize timePeriodSelector;
 @synthesize coreDataArray;
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     

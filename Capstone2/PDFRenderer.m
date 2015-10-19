@@ -66,7 +66,7 @@
     NSArray *objects = [context executeFetchRequest:request
                                               error:&error];
     
-    NSString *firstName, *lastName, *dateOfBirth, *medicalID;
+    NSString *firstName, *lastName, *dateOfBirth, *medicalID, *patientEmail, *patientPhone, *doctorEmail, *doctorName;
     
     if ([objects count] == 0) {
         NSLog(@"No matches");
@@ -76,11 +76,14 @@
         lastName = [matches valueForKey:@"lastName"];
         dateOfBirth = [matches valueForKey:@"dateOfBirth"];
         medicalID = [matches valueForKey:@"medicalID"];
+        patientEmail = [matches valueForKey:@"email"];
+        patientPhone = [matches valueForKey:@"phoneNumber"];
+        doctorEmail = [matches valueForKey:@"doctorEmail"];
+        doctorName = [matches valueForKey:@"doctorName"];
+
     }
 
-    NSString *lineBreak = @"\n";
-    
-    NSString *joinString=[NSString stringWithFormat:@"%@,%@,%@,%@,%@,%@,%@", firstName, lineBreak, lastName, lineBreak, dateOfBirth, lineBreak, medicalID];
+   
     
     //Method to Draw Text using a Cordinate System. Will use to draw all the text for the patient information.
     //Need to figure out necessary cordinate systems.
