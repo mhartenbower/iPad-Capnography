@@ -30,10 +30,10 @@
     [self drawText];
     
     
-    UIImage* logo = [UIImage imageNamed:@"Mayo-clinic-logo.png"];
-    CGRect frame = CGRectMake(20, 100, 300, 60);
+    //UIImage* logo = [UIImage imageNamed:@"Mayo-clinic-logo.png"];
+    //CGRect frame = CGRectMake(20, 100, 300, 60);
     
-    [PDFRenderer drawImage:logo inRect:frame];
+    //[PDFRenderer drawImage:logo inRect:frame];
     
     //Use this Code to Draw Images will eventually be used to render the graph image.
     
