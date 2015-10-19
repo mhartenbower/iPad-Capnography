@@ -26,8 +26,6 @@
 		0AF9EB9A1A8C102B00A8830A /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9EB991A8C102B00A8830A /* AppViewController.m */; };
 		0AF9EB9C1A8C130F00A8830A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9EB9B1A8C130F00A8830A /* CoreBluetooth.framework */; };
 		0AF9EBE41A8C1FD500A8830A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9EBE31A8C1FD500A8830A /* UIKit.framework */; };
-		B32EF4181BBCE80E00CDF80F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B32EF4171BBCE80E00CDF80F /* Person.m */; };
-		B32EF41B1BBCE98600CDF80F /* Co2Value.m in Sources */ = {isa = PBXBuildFile; fileRef = B32EF41A1BBCE98600CDF80F /* Co2Value.m */; };
 		B32EF4201BBD018800CDF80F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32EF41F1BBD018800CDF80F /* CoreData.framework */; };
 		B3761ED01BC4BC980020A996 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3761ECF1BC4BC980020A996 /* PDFViewController.m */; };
 		B3761ED21BC4C1C40020A996 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3761ED11BC4C1C40020A996 /* CoreText.framework */; };
@@ -96,7 +94,6 @@
 		BB409C451BB5BC590086483F /* AppData.m in Sources */ = {isa = PBXBuildFile; fileRef = BB409C441BB5BC590086483F /* AppData.m */; };
 		BB409C481BB5C1BD0086483F /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB409C461BB5C1BD0086483F /* CoreData.xcdatamodeld */; };
 		BB409C4B1BB5C5390086483F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB409C4A1BB5C5390086483F /* TabBarViewController.m */; };
-		BB409C4E1BB5C5A50086483F /* PatientInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB409C4D1BB5C5A50086483F /* PatientInformationViewController.m */; };
 		BB409C511BB5C73F0086483F /* LongTermGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB409C501BB5C73F0086483F /* LongTermGraphViewController.m */; };
 		BB409C541BB5C7810086483F /* DoctorInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB409C531BB5C7810086483F /* DoctorInformationViewController.m */; };
 		BBDA8D941BB600A600D531CE /* RFduinoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDA8D931BB600A600D531CE /* RFduinoObject.m */; };
@@ -145,10 +142,6 @@
 		0AF9EB991A8C102B00A8830A /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppViewController.m; path = Capstone2/AppViewController.m; sourceTree = "<group>"; };
 		0AF9EB9B1A8C130F00A8830A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		0AF9EBE31A8C1FD500A8830A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B32EF4161BBCE80E00CDF80F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Capstone2/Person.h; sourceTree = "<group>"; };
-		B32EF4171BBCE80E00CDF80F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Capstone2/Person.m; sourceTree = "<group>"; };
-		B32EF4191BBCE98600CDF80F /* Co2Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Co2Value.h; path = Capstone2/Co2Value.h; sourceTree = "<group>"; };
-		B32EF41A1BBCE98600CDF80F /* Co2Value.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Co2Value.m; path = Capstone2/Co2Value.m; sourceTree = "<group>"; };
 		B32EF41F1BBD018800CDF80F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B3761ECE1BC4BC980020A996 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		B3761ECF1BC4BC980020A996 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
@@ -320,8 +313,6 @@
 		BB409C471BB5C1BD0086483F /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		BB409C491BB5C5390086483F /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarViewController.h; path = Capstone2/TabBarViewController.h; sourceTree = "<group>"; };
 		BB409C4A1BB5C5390086483F /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarViewController.m; path = Capstone2/TabBarViewController.m; sourceTree = "<group>"; };
-		BB409C4C1BB5C5A50086483F /* PatientInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientInformationViewController.h; path = Capstone2/PatientInformationViewController.h; sourceTree = "<group>"; };
-		BB409C4D1BB5C5A50086483F /* PatientInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientInformationViewController.m; path = Capstone2/PatientInformationViewController.m; sourceTree = "<group>"; };
 		BB409C4F1BB5C73F0086483F /* LongTermGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongTermGraphViewController.h; path = Capstone2/LongTermGraphViewController.h; sourceTree = "<group>"; };
 		BB409C501BB5C73F0086483F /* LongTermGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongTermGraphViewController.m; path = Capstone2/LongTermGraphViewController.m; sourceTree = "<group>"; };
 		BB409C521BB5C7810086483F /* DoctorInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoctorInformationViewController.h; path = Capstone2/DoctorInformationViewController.h; sourceTree = "<group>"; };
@@ -473,10 +464,6 @@
 		B3761EC91BC494870020A996 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				B32EF4161BBCE80E00CDF80F /* Person.h */,
-				B32EF4171BBCE80E00CDF80F /* Person.m */,
-				B32EF4191BBCE98600CDF80F /* Co2Value.h */,
-				B32EF41A1BBCE98600CDF80F /* Co2Value.m */,
 				BB409C461BB5C1BD0086483F /* CoreData.xcdatamodeld */,
 			);
 			name = "Core Data";
@@ -492,8 +479,6 @@
 				BB409C531BB5C7810086483F /* DoctorInformationViewController.m */,
 				BB409C4F1BB5C73F0086483F /* LongTermGraphViewController.h */,
 				BB409C501BB5C73F0086483F /* LongTermGraphViewController.m */,
-				BB409C4C1BB5C5A50086483F /* PatientInformationViewController.h */,
-				BB409C4D1BB5C5A50086483F /* PatientInformationViewController.m */,
 				BB409C491BB5C5390086483F /* TabBarViewController.h */,
 				BB409C4A1BB5C5390086483F /* TabBarViewController.m */,
 				0A5258F11BD3858E005611C0 /* NewPatientInformation.h */,
@@ -865,7 +850,6 @@
 				B3E7A71F1BD47D56004E76E1 /* ReaderThumbRequest.m in Sources */,
 				0AF9EB971A8C0D7F00A8830A /* ScanViewController.m in Sources */,
 				0AF9EB951A8C0D7F00A8830A /* RFduino.m in Sources */,
-				B32EF41B1BBCE98600CDF80F /* Co2Value.m in Sources */,
 				B3E7A7141BD47D56004E76E1 /* ReaderContentPage.m in Sources */,
 				B3E7A71A1BD47D56004E76E1 /* ReaderMainToolbar.m in Sources */,
 				B3761ED01BC4BC980020A996 /* PDFViewController.m in Sources */,
@@ -882,9 +866,7 @@
 				B3E7A7231BD47D56004E76E1 /* ThumbsMainToolbar.m in Sources */,
 				0A5258F31BD3858E005611C0 /* NewPatientInformation.m in Sources */,
 				BB409C511BB5C73F0086483F /* LongTermGraphViewController.m in Sources */,
-				B32EF4181BBCE80E00CDF80F /* Person.m in Sources */,
 				BB409C451BB5BC590086483F /* AppData.m in Sources */,
-				BB409C4E1BB5C5A50086483F /* PatientInformationViewController.m in Sources */,
 				B3E7A71D1BD47D56004E76E1 /* ReaderThumbQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

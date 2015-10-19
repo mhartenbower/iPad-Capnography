@@ -20,134 +20,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Ga9-I7-b1S" kind="relationship" relationship="viewControllers" id="FMa-lc-VLM"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="X1b-B7-1Gg"/>
-                        <segue destination="Cjw-T6-a0B" kind="relationship" relationship="viewControllers" id="I1o-Yz-D3y"/>
-                        <segue destination="FcP-HS-Dif" kind="relationship" relationship="viewControllers" id="g3L-Ab-7c8"/>
+                        <segue destination="FcP-HS-Dif" kind="relationship" relationship="viewControllers" id="wER-pt-Ryg"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="j70-zO-b5U"/>
+                        <segue destination="Cjw-T6-a0B" kind="relationship" relationship="viewControllers" id="Vhy-fp-TZM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AO-zs-7rk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-797" y="94"/>
-        </scene>
-        <!--Patient Information-->
-        <scene sceneID="Rw2-GP-6Kf">
-            <objects>
-                <viewController id="Ga9-I7-b1S" customClass="PatientInformationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="s8f-hf-5rD"/>
-                        <viewControllerLayoutGuide type="bottom" id="j4O-yg-ule"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tVR-4Z-Tdg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9r-Ki-ZdY">
-                                <rect key="frame" x="126" y="28" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="last name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AgI-Ax-1fp">
-                                <rect key="frame" x="126" y="117" width="150" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="search first name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YKP-Vd-Gm3">
-                                <rect key="frame" x="126" y="328" width="150" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naT-Vf-A3Z">
-                                <rect key="frame" x="177" y="380" width="48" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Search"/>
-                                <connections>
-                                    <action selector="search:" destination="Ga9-I7-b1S" eventType="touchUpInside" id="4CF-SB-1T2"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-Xo-BX7">
-                                <rect key="frame" x="177" y="451" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="first name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDJ-Hp-EJN">
-                                <rect key="frame" x="126" y="66" width="150" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Tvl-t9-IBf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="date of birth" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="303-5W-rf8">
-                                <rect key="frame" x="126" y="170" width="150" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8t-Mw-daV">
-                                <rect key="frame" x="126" y="276" width="150" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Save Data"/>
-                                <connections>
-                                    <action selector="saveData:" destination="Ga9-I7-b1S" eventType="touchUpInside" id="Pd0-zZ-rzE"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="medicalID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6hU-nH-q1p">
-                                <rect key="frame" x="126" y="217" width="150" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="nJ0-Xo-BX7" firstAttribute="top" secondItem="naT-Vf-A3Z" secondAttribute="bottom" constant="41" id="1Ja-cr-ogg"/>
-                            <constraint firstItem="J8t-Mw-daV" firstAttribute="trailing" secondItem="6hU-nH-q1p" secondAttribute="trailing" id="3Qh-Wm-zhj"/>
-                            <constraint firstItem="AgI-Ax-1fp" firstAttribute="leading" secondItem="303-5W-rf8" secondAttribute="leading" id="40y-G8-EzU"/>
-                            <constraint firstItem="6hU-nH-q1p" firstAttribute="leading" secondItem="303-5W-rf8" secondAttribute="leading" id="5W1-G4-0DS"/>
-                            <constraint firstItem="6hU-nH-q1p" firstAttribute="leading" secondItem="J8t-Mw-daV" secondAttribute="leading" id="5rp-vp-q01"/>
-                            <constraint firstItem="YKP-Vd-Gm3" firstAttribute="trailing" secondItem="J8t-Mw-daV" secondAttribute="trailing" id="8bW-Lh-GkG"/>
-                            <constraint firstItem="aDJ-Hp-EJN" firstAttribute="top" secondItem="R9r-Ki-ZdY" secondAttribute="bottom" constant="17" id="Bic-Ae-wKJ"/>
-                            <constraint firstItem="R9r-Ki-ZdY" firstAttribute="top" secondItem="s8f-hf-5rD" secondAttribute="bottom" constant="8" symbolic="YES" id="CGO-Fb-SKO"/>
-                            <constraint firstItem="AgI-Ax-1fp" firstAttribute="trailing" secondItem="aDJ-Hp-EJN" secondAttribute="trailing" id="CYy-4P-2Es"/>
-                            <constraint firstItem="AgI-Ax-1fp" firstAttribute="top" secondItem="aDJ-Hp-EJN" secondAttribute="bottom" constant="21" id="F8M-4g-C2A"/>
-                            <constraint firstItem="AgI-Ax-1fp" firstAttribute="trailing" secondItem="303-5W-rf8" secondAttribute="trailing" id="PAf-fR-tz3"/>
-                            <constraint firstItem="nJ0-Xo-BX7" firstAttribute="leading" secondItem="naT-Vf-A3Z" secondAttribute="leading" id="Q5F-1G-NZd"/>
-                            <constraint firstItem="YKP-Vd-Gm3" firstAttribute="centerX" secondItem="naT-Vf-A3Z" secondAttribute="centerX" id="QIs-5N-rTV"/>
-                            <constraint firstItem="J8t-Mw-daV" firstAttribute="top" secondItem="6hU-nH-q1p" secondAttribute="bottom" constant="29" id="R4m-cl-vnl"/>
-                            <constraint firstItem="naT-Vf-A3Z" firstAttribute="top" secondItem="YKP-Vd-Gm3" secondAttribute="bottom" constant="22" id="RY2-n7-BQO"/>
-                            <constraint firstItem="R9r-Ki-ZdY" firstAttribute="leading" secondItem="aDJ-Hp-EJN" secondAttribute="leading" id="RaB-AZ-qNg"/>
-                            <constraint firstItem="R9r-Ki-ZdY" firstAttribute="leading" secondItem="tVR-4Z-Tdg" secondAttribute="leading" constant="126" id="RqF-Kw-fZu"/>
-                            <constraint firstItem="J8t-Mw-daV" firstAttribute="leading" secondItem="YKP-Vd-Gm3" secondAttribute="leading" id="TfO-TB-L6e"/>
-                            <constraint firstItem="YKP-Vd-Gm3" firstAttribute="top" secondItem="J8t-Mw-daV" secondAttribute="bottom" constant="22" id="Th4-m9-PDF"/>
-                            <constraint firstItem="6hU-nH-q1p" firstAttribute="top" secondItem="303-5W-rf8" secondAttribute="bottom" constant="17" id="cen-P1-akv"/>
-                            <constraint firstItem="303-5W-rf8" firstAttribute="top" secondItem="AgI-Ax-1fp" secondAttribute="bottom" constant="23" id="k6X-ZZ-Gxx"/>
-                            <constraint firstItem="6hU-nH-q1p" firstAttribute="trailing" secondItem="303-5W-rf8" secondAttribute="trailing" id="mDJ-m7-Mdg"/>
-                            <constraint firstItem="AgI-Ax-1fp" firstAttribute="leading" secondItem="aDJ-Hp-EJN" secondAttribute="leading" id="ugF-xT-Fim"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Patient Information" image="Caduceus-32.png" id="con-UD-xoM"/>
-                    <connections>
-                        <outlet property="Co2Value" destination="nJ0-Xo-BX7" id="F7A-Yd-FCa"/>
-                        <outlet property="dateOfBirth" destination="303-5W-rf8" id="5xE-At-Qh5"/>
-                        <outlet property="firstName" destination="aDJ-Hp-EJN" id="jNR-A2-eu0"/>
-                        <outlet property="lastName" destination="AgI-Ax-1fp" id="75R-YS-SX2"/>
-                        <outlet property="medicalID" destination="6hU-nH-q1p" id="iIS-EM-giO"/>
-                        <outlet property="searchFirstName" destination="YKP-Vd-Gm3" id="KUw-gZ-Ff1"/>
-                        <outlet property="status" destination="R9r-Ki-ZdY" id="mGg-2L-ry3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vr6-jY-g9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="171" y="-434"/>
         </scene>
         <!--Real Time Graph-->
         <scene sceneID="tne-QT-ifu">
@@ -397,7 +277,7 @@
             </objects>
             <point key="canvasLocation" x="171" y="887"/>
         </scene>
-        <!--PatientInformation(New)-->
+        <!--PatientInformation-->
         <scene sceneID="Z8R-eL-CwH">
             <objects>
                 <tableViewController id="FcP-HS-Dif" customClass="NewPatientInformation" sceneMemberID="viewController">
@@ -612,7 +492,7 @@
                             <outlet property="delegate" destination="FcP-HS-Dif" id="Sbu-kl-jal"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="PatientInformation(New)" image="Medical Doctor-32.png" id="W1F-7p-1bp"/>
+                    <tabBarItem key="tabBarItem" title="PatientInformation" image="Medical Doctor-32.png" id="W1F-7p-1bp"/>
                     <connections>
                         <outlet property="dateofBirth" destination="VvJ-V4-uJo" id="YBa-Dw-IT8"/>
                         <outlet property="doctorEmail" destination="CKO-f7-aTR" id="Bdc-xa-hwZ"/>
@@ -632,7 +512,6 @@
     </scenes>
     <resources>
         <image name="Bar Chart-32.png" width="32" height="32"/>
-        <image name="Caduceus-32.png" width="32" height="32"/>
         <image name="Heart Monitor-32.png" width="32" height="32"/>
         <image name="Medical Doctor-32.png" width="32" height="32"/>
         <image name="Play Filled-50.png" width="50" height="50"/>
