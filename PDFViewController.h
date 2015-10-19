@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
+#import "ReaderViewController.h"
+
 
 @interface PDFViewController : UIViewController
 

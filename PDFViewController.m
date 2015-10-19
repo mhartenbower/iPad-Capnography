@@ -60,6 +60,34 @@
 
 -(void)showPDFFile
 {
+    
+    NSString* fileName = @"DoctorInformation.PDF";
+    NSArray *arrayPaths =
+    NSSearchPathForDirectoriesInDomains(
+                                        NSDocumentDirectory,
+                                        NSUserDomainMask,
+                                        YES);
+    NSString *path = [arrayPaths objectAtIndex:0];
+    NSString* pdfFileName = [path stringByAppendingPathComponent:fileName];
+    
+    
+    
+    
+    ReaderDocument *document = [ReaderDocument withDocumentFilePath:pdfFileName password:nil];
+    
+    if (document != nil)
+    {
+        ReaderViewController *readerViewController = [[ReaderViewController alloc] initWithReaderDocument:document];
+        readerViewController.delegate = self;
+        
+        readerViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        readerViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+        [self presentModalViewController:readerViewController animated:YES];
+    }
+    
+    
+    /*
     NSString* fileName = @"DoctorInformation.PDF";
     NSArray *arrayPaths =
     NSSearchPathForDirectoriesInDomains(
@@ -81,8 +109,16 @@
     [webView loadRequest:request];
     
     [self.view addSubview:webView];
+     
+     */
+    
+    
+    
 }
 
+- (void)dismissReaderViewController:(ReaderViewController *)viewController {
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

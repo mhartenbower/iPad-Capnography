@@ -11,10 +11,10 @@
 #import "CorePlot-CocoaTouch.h"
 #import "NSNumberExtensions.h"
 #import "AppDelegate.h"
+#import "ReaderViewController.h"
 
 
-
-@interface LongTermGraphViewController : UIViewController <CPTPlotDataSource>
+@interface LongTermGraphViewController : UIViewController <CPTPlotDataSource, ReaderViewControllerDelegate>
 
 {
     CPTXYGraph *graph3;
