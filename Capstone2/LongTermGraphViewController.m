@@ -186,8 +186,8 @@
 
 -(NSNumber *)numberForPlot:(CPTPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)index
 {
-    NSUInteger x = index;
-    NSUInteger y = 0;
+    //NSUInteger x = index;
+    //NSUInteger y = 0;
     
     NSError *error;
     

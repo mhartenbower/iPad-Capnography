@@ -156,17 +156,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vo-O9-XQu">
-                                <rect key="frame" x="380" y="496" width="127" height="38"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="Jnc-5S-ntu"/>
-                                </constraints>
-                                <state key="normal" title="Generate PDF"/>
-                                <connections>
-                                    <segue destination="Mux-vT-VFI" kind="custom" id="H4F-qc-vS4"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Period of Time to Display on Graph:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hb-RP-St6">
                                 <rect key="frame" x="163" y="395" width="271" height="21"/>
                                 <animations/>
@@ -201,6 +190,17 @@
                                     <segment title="40 Seconds"/>
                                 </segments>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vo-O9-XQu">
+                                <rect key="frame" x="380" y="496" width="127" height="38"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="Jnc-5S-ntu"/>
+                                </constraints>
+                                <state key="normal" title="Generate PDF"/>
+                                <connections>
+                                    <segue destination="Mux-vT-VFI" kind="custom" id="H4F-qc-vS4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

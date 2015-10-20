@@ -24,8 +24,9 @@
     //Draw the text from the method that it shown bellow
     
     
-    //UIImage* logo = [UIImage imageNamed:@"Mayo-clinic-logo.png"];
-    //CGRect frame = CGRectMake(20, 100, 300, 60);
+    //Matt put your code in here. 
+    UIImage* logo = [UIImage imageNamed:newPNG];
+    CGRect frame = CGRectMake(20, 100, 300, 60);
     
     //[PDFRenderer drawImage:logo inRect:frame];
     
