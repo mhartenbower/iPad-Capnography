@@ -15,7 +15,6 @@
 @interface PDFRenderer : NSObject
 
 +(void)drawPDF:(NSString*)fileName;
-+(void)drawText;
 +(void)drawImage:(UIImage*)image inRect:(CGRect)rect;
 +(void)drawText:(NSString*)textToDraw inFrame:(CGRect)frameRect;
 
