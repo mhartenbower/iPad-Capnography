@@ -151,31 +151,36 @@
 
 -(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plotnumberOfRecords {
     
+    if(timePeriodSelector.selectedSegmentIndex ==0)
+    {
+        NSLog(@"No Points");
+        return 0;
+    }
     
-    if(timePeriodSelector.selectedSegmentIndex == 0)
+    else if(timePeriodSelector.selectedSegmentIndex == 1)
     {
         NSLog(@"15 seconds");
         return 300;
     }
-    else if(timePeriodSelector.selectedSegmentIndex == 1)
+    
+    else if(timePeriodSelector.selectedSegmentIndex == 2)
     {
         NSLog(@"20 seconds");
         return 400;
     }
-    else if(timePeriodSelector.selectedSegmentIndex == 2)
+    else if(timePeriodSelector.selectedSegmentIndex == 3)
     {
         NSLog(@"30 seconds");
         return 600;
     }
-    else if(timePeriodSelector.selectedSegmentIndex == 3)
+    else if(timePeriodSelector.selectedSegmentIndex == 4)
     {
         NSLog(@"40 seconds");
         return 800;
     }
+    
     return nil;
-     
-   // NSLog(@"200 points");
-   // return 200;
+    
     
 }
 
