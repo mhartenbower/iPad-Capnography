@@ -16,6 +16,8 @@
 
 @implementation PDFViewController
 
+@synthesize graphImage;
+
 - (void)viewDidLoad
 
 {

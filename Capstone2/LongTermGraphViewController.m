@@ -7,6 +7,7 @@
 //
 
 #import "LongTermGraphViewController.h"
+#import "PDFViewController.h"
 
 @interface LongTermGraphViewController ()
 
@@ -191,9 +192,8 @@ else if (timePeriodSelector.selectedSegmentIndex == 3)
 - (IBAction)saveGraphImage:(id)sender
 
 {
-    //Need to save the Graph Generate by Core Plot as an Image File. Should be able to be done by calling the method CPT Image of Layer.
-    
-    
+    UIImage *newImage=[graph3 imageOfLayer];
+    newPNG=UIImagePNGRepresentation(newImage);
 }
 
 
@@ -317,6 +317,15 @@ else if (timePeriodSelector.selectedSegmentIndex == 3)
     NSLog(@"Reloading data");
     [graph3 reloadData];
 
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"YOUR_SEGUE_NAME_HERE"])
+    {
+        PDFViewController *vc = [segue destinationViewController];
+        [vc setGraphImage:newPNG];
+    }
 }
 
 

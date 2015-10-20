@@ -19,6 +19,8 @@
 {
     CPTXYGraph *graph3;
     NSManagedObjectContext *context;
+    NSData *newPNG;
+
     
 }
 
