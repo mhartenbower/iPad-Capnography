@@ -26,7 +26,7 @@
     
     NSString* fileName = [self getPDFFileName];
     
-    [PDFRenderer drawPDF:fileName];
+    [PDFRenderer drawPDF:fileName withImage:graphImage];
     
     [self showPDFFile];
     

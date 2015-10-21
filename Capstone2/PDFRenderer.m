@@ -11,7 +11,7 @@
 @implementation PDFRenderer
 
 
-+(void)drawPDF:(NSString*)fileName
++(void)drawPDF:(NSString*)fileName withImage:(UIImage*)graphImage
 {
     // Create the PDF context using the default page size of 612 x 792. Use the given file name from PDF View Controller.
     UIGraphicsBeginPDFContextToFile(fileName, CGRectZero, nil);

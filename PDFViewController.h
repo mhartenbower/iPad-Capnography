@@ -13,7 +13,7 @@
 
 @interface PDFViewController : UIViewController
 
-@property(strong, nonatomic) NSData *graphImage;
+@property(strong, nonatomic) UIImage *graphImage;
 
 
 @end

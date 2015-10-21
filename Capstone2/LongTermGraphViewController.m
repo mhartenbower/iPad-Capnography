@@ -192,8 +192,8 @@ else if (timePeriodSelector.selectedSegmentIndex == 3)
 - (IBAction)saveGraphImage:(id)sender
 
 {
-    UIImage *newImage=[graph3 imageOfLayer];
-    newPNG=UIImagePNGRepresentation(newImage);
+    graphImage=[graph3 imageOfLayer];
+    newPNG=UIImagePNGRepresentation(graphImage);
 }
 
 
@@ -324,7 +324,7 @@ else if (timePeriodSelector.selectedSegmentIndex == 3)
     if ([[segue identifier] isEqualToString:@"YOUR_SEGUE_NAME_HERE"])
     {
         PDFViewController *vc = [segue destinationViewController];
-        [vc setGraphImage:newPNG];
+        [vc setGraphImage:graphImage];
     }
 }
 
