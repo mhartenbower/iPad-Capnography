@@ -23,12 +23,18 @@
     
     //Draw the text from the method that it shown bellow
     
+
     
-    //Matt put your code in here. 
-    UIImage* logo = graphImage;
-    CGRect frame = CGRectMake(20, 100, 300, 60);
+    UIImage *logo = graphImage;
     
-    //[PDFRenderer drawImage:logo inRect:frame];
+    //CGRect frame = CGRectMake(50, 350, 600, 400);
+    
+    NSLog(@"The width is %a and the height is %a", logo.size.width,logo.size.height);
+    
+    
+    CGRect frame = CGRectMake(0, 0, logo.size.width, logo.size.height);
+    
+    [PDFRenderer drawImage:logo inRect:frame];
     
     //Use this Code to Draw Images will eventually be used to render the graph image.
     
@@ -43,9 +49,9 @@
     int numberOfRows = 4;
     int numberOfColumns = 4;
     
-    [self drawTableAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
+    //[self drawTableAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
     
-    [self drawTableDataAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
+    //[self drawTableDataAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
     
     
     

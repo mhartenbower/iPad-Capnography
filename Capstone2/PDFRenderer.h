@@ -10,6 +10,9 @@
 #import <CoreText/CoreText.h>
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "PDFViewController.h"
+
+
 
 
 @interface PDFRenderer : NSObject
