@@ -129,8 +129,6 @@
     [graph3 reloadData];
     
     
-    //Initial Graphs is set up still need to finish the graph setup to draw information from core data
-    
     
 }
 
@@ -139,55 +137,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-//Used to programitcally control what happens when the user selects the period of time to display on the graph
-
-//Code to Implement Selector for time Period
-/*
-- (IBAction)timePeriodAction:(id)sender
-
-{
-    
-if (timePeriodSelector.selectedSegmentIndex == 0)
-    
-{
-    //Add in Code to Display only Core Data Values in the last 15 Seconds since the last measrument in the Graph
-}
-    
-else if (timePeriodSelector.selectedSegmentIndex == 1)
-    
-{
-    //Add in Code to Display only Core Data Values in the last 30 Seconds since the last taken measrment in the Graph
-}
-    
-else if (timePeriodSelector.selectedSegmentIndex == 2)
-    
-{
-
-    //Add in the Code to Display only Core Data Values in the last 1 minute since the last measrument in the Graph.
-
-}
-    
-else if (timePeriodSelector.selectedSegmentIndex == 3)
-    
-{
-    //Add in the Code to Display only Core Data Values from the Last Five Minutes since the last measurment in the Graph
-    
-}
- 
- 
-}
- 
- */
 
 - (IBAction)saveGraphImage:(id)sender
 
@@ -200,50 +149,45 @@ else if (timePeriodSelector.selectedSegmentIndex == 3)
 //Information to Determine what points to add to Graph.
 
 
-//Method to implement number of records that will go on plot. Needs to be changed depending on current selection of the switch.
-
-//Need to Return amount of points in a number that will go on plot. Number of points based on time period selector switch.
-//Needs to be an NSInteger. Example return 8
-
 -(NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plotnumberOfRecords {
     
+    if(timePeriodSelector.selectedSegmentIndex ==0)
+    {
+        NSLog(@"No Points");
+        return 0;
+    }
     
-    if(timePeriodSelector.selectedSegmentIndex == 0)
+    else if(timePeriodSelector.selectedSegmentIndex == 1)
     {
         NSLog(@"15 seconds");
         return 300;
     }
-    else if(timePeriodSelector.selectedSegmentIndex == 1)
+    
+    else if(timePeriodSelector.selectedSegmentIndex == 2)
     {
         NSLog(@"20 seconds");
         return 400;
     }
-    else if(timePeriodSelector.selectedSegmentIndex == 2)
+    else if(timePeriodSelector.selectedSegmentIndex == 3)
     {
         NSLog(@"30 seconds");
         return 600;
     }
-    else if(timePeriodSelector.selectedSegmentIndex == 3)
+    else if(timePeriodSelector.selectedSegmentIndex == 4)
     {
         NSLog(@"40 seconds");
         return 800;
     }
+    
     return nil;
-     
-   // NSLog(@"200 points");
-   // return 200;
+    
     
 }
 
-
-
-
-
-
 -(NSNumber *)numberForPlot:(CPTPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)index
 {
-    NSUInteger x = index;
-    NSUInteger y = 0;
+    //NSUInteger x = index;
+    //NSUInteger y = 0;
     
     NSError *error;
     
@@ -276,16 +220,7 @@ else if (timePeriodSelector.selectedSegmentIndex == 3)
         else
         {
             NSUInteger length = [coreDataArray count];
-            /*
-            if (length > 200)
-            {
-                return [coreDataArray objectAtIndex:length-(200-index)];
-            }
-             */
-            //else
-            //{
-                return [coreDataArray objectAtIndex:index];
-            //}
+            return [coreDataArray objectAtIndex:index];
         }
         
     }
