@@ -23,12 +23,12 @@
     
     //Draw the text from the method that it shown bellow
     
+
     
-    //Matt put your code in here. 
-    UIImage* logo = graphImage;
-    CGRect frame = CGRectMake(20, 100, 300, 60);
+    UIImage *logo = graphImage;
+    CGRect frame = CGRectMake(50, 350, 600, 400);
     
-    //[PDFRenderer drawImage:logo inRect:frame];
+    [PDFRenderer drawImage:logo inRect:frame];
     
     //Use this Code to Draw Images will eventually be used to render the graph image.
     

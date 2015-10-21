@@ -89,31 +89,7 @@
     }
     
     
-    /*
-    NSString* fileName = @"DoctorInformation.PDF";
-    NSArray *arrayPaths =
-    NSSearchPathForDirectoriesInDomains(
-                                        NSDocumentDirectory,
-                                        NSUserDomainMask,
-                                        YES);
-    NSString *path = [arrayPaths objectAtIndex:0];
-    NSString* pdfFileName = [path stringByAppendingPathComponent:fileName];
-    
-    UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 700, 900)];
-    
-    //Creates a webView that sets the size of the PDF rendering view. Cordinates can be chose and set here. Need to Modify in future. 
-    
-    //Cordinates work the following way. (x,y,l,h). x=upper left point origin, y=upper left point y origin, l=rectange length, h=height of rectangle
-    
-    NSURL *url = [NSURL fileURLWithPath:pdfFileName];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [webView setScalesPageToFit:YES];
-    [webView loadRequest:request];
-    
-    [self.view addSubview:webView];
-     
-     */
-    
+      
     
     
 }
