@@ -225,10 +225,13 @@
     //This works but the top does not.
     
     NSMutableArray* patientInfo1 = [[NSMutableArray alloc] init];
-    [patientInfo1 addObject:firstName];
+    
     [patientInfo1 addObject:@"First Name"];
-    [patientInfo1 addObject:lastName];
+    [patientInfo1 addObject:firstName];
+    
     [patientInfo1 addObject:@"Last Name"];
+    [patientInfo1 addObject:lastName];
+    
     
     NSMutableArray* patientInfo2 = [[NSMutableArray alloc] init];
     [patientInfo2 addObject:@"Date of Birth"];
