@@ -142,7 +142,7 @@
 
 {
     graphImage=[graph3 imageOfLayer];
-    newPNG=UIImagePNGRepresentation(graphImage);
+   // newPNG=UIImagePNGRepresentation(graphImage);
     
     NSLog(@"The width is %a and the height is %a", graphImage.size.width, graphImage.size.height);
     

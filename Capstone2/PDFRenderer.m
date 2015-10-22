@@ -23,8 +23,6 @@
     
     //Draw the text from the method that it shown bellow
     
-
-    
     UIImage *logo = graphImage;
     
     //CGRect frame = CGRectMake(50, 350, 600, 400);
