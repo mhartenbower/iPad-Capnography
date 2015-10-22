@@ -88,10 +88,6 @@
         [self presentModalViewController:readerViewController animated:YES];
     }
     
-    
-      
-    
-    
 }
 
 - (void)dismissReaderViewController:(ReaderViewController *)viewController {

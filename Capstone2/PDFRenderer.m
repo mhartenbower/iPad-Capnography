@@ -30,7 +30,9 @@
     NSLog(@"The width is %a and the height is %a", graphImage.size.width,graphImage.size.height);
     
     
-    CGRect frame = CGRectMake(0, 0, graphImage.size.width, graphImage.size.height);
+    //CGRect frame = CGRectMake(0, 0, graphImage.size.width, graphImage.size.height);
+    
+    CGRect frame = CGRectMake(20, 350, 580, 400);
     
     [PDFRenderer drawImage:graphImage inRect:frame];
     
@@ -47,9 +49,9 @@
     int numberOfRows = 4;
     int numberOfColumns = 4;
     
-    //[self drawTableAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
+    [self drawTableAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
     
-    //[self drawTableDataAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
+    [self drawTableDataAt:CGPointMake(xOrigin, yOrigin) withRowHeight:rowHeight andColumnWidth:columnWidth andRowCount:numberOfRows andColumnCount:numberOfColumns];
     
     
     
@@ -189,10 +191,6 @@
     
     [request setEntity:entityDesc];
     
-    //We probably don't need a predicate right now...
-    //NSPredicate *pred =
-    //[NSPredicate predicateWithFormat:@"(firstName = %@)"];
-    //[request setPredicate:pred];
     
     NSManagedObject *matches = nil;
     NSArray *objects = [context executeFetchRequest:request
@@ -219,10 +217,19 @@
     
     //Takes Items that are from core data above and renders them in a chart. 
     
-    NSArray* patientInfo1 = [NSArray arrayWithObjects:@"First Name", firstName, @"Last Name", lastName, nil];
-    NSArray* patientInfo2 = [NSArray arrayWithObjects:@"Date of Birth", dateOfBirth, @"MedicalID#", medicalID, nil];
-    NSArray* patientInfo3 = [NSArray arrayWithObjects:@"Patient Email", patientEmail, @"Patient Phone", patientPhone, nil];
-    NSArray* patientInfo4 = [NSArray arrayWithObjects:@"Doctor Email", doctorEmail, @"Doctor Name", doctorName, nil];
+   // NSArray* patientInfo1 = [NSArray arrayWithObjects:@"First Name", firstName, @"Last Name", lastName, nil];
+   // NSArray* patientInfo2 = [NSArray arrayWithObjects:@"Date of Birth", dateOfBirth, @"MedicalID#", medicalID, nil];
+    //NSArray* patientInfo3 = [NSArray arrayWithObjects:@"Patient Email", patientEmail, @"Patient Phone", patientPhone, nil];
+    //NSArray* patientInfo4 = [NSArray arrayWithObjects:@"Doctor Email", doctorEmail, @"Doctor Name", doctorName, nil];
+    
+    //This works but the top does not. 
+    
+    NSArray* patientInfo1 = [NSArray arrayWithObjects:@"First Name", @"Test", @"Last Name", @"Test", nil];
+    NSArray* patientInfo2 = [NSArray arrayWithObjects:@"Date of Birth", @"Test", @"MedicalID#", @"Test", nil];
+    NSArray* patientInfo3 = [NSArray arrayWithObjects:@"Patient Email", @"Patient Email", @"Patient Phone", @"patientPhone", nil];
+    NSArray* patientInfo4 = [NSArray arrayWithObjects:@"Doctor Email", @"doctorEmail", @"Doctor Name", @"doctorName", nil];
+    
+    
     //NSArray* patientInfo5 = [NSArray arrayWithObjects:@"Blank", @"Blank", @"Blank", @"Blank", nil];
 
     
