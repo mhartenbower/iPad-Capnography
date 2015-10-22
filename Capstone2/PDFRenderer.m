@@ -226,18 +226,26 @@
     
     NSMutableArray* patientInfo1 = [[NSMutableArray alloc] init];
     [patientInfo1 addObject:firstName];
+    [patientInfo1 addObject:@"First Name"];
     [patientInfo1 addObject:lastName];
+    [patientInfo1 addObject:@"Last Name"];
     
     NSMutableArray* patientInfo2 = [[NSMutableArray alloc] init];
+    [patientInfo2 addObject:@"Date of Birth"];
     [patientInfo2 addObject:dateOfBirth];
+    [patientInfo2 addObject:@"Medical ID"];
     [patientInfo2 addObject:medicalID];
     
     NSMutableArray* patientInfo3 = [[NSMutableArray alloc] init];
+    [patientInfo3 addObject:@"Patient Email"];
     [patientInfo3 addObject:patientEmail];
+    [patientInfo3 addObject:@"Patient Phone"];
     [patientInfo3 addObject:patientPhone];
 
     NSMutableArray* patientInfo4 = [[NSMutableArray alloc] init];
+    [patientInfo4 addObject:@"Doctor Email"];
     [patientInfo4 addObject:doctorEmail];
+    [patientInfo4 addObject:@"Doctor Name"];
     [patientInfo4 addObject:doctorName];
     
     //NSArray* patientInfo5 = [NSArray arrayWithObjects:@"Blank", @"Blank", @"Blank", @"Blank", nil];
