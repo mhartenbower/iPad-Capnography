@@ -23,16 +23,16 @@
     
     //Draw the text from the method that it shown bellow
     
-    UIImage *logo = graphImage;
+    //UIImage *logo = graphImage;
     
     //CGRect frame = CGRectMake(50, 350, 600, 400);
     
-    NSLog(@"The width is %a and the height is %a", logo.size.width,logo.size.height);
+    NSLog(@"The width is %a and the height is %a", graphImage.size.width,graphImage.size.height);
     
     
-    CGRect frame = CGRectMake(0, 0, logo.size.width, logo.size.height);
+    CGRect frame = CGRectMake(0, 0, graphImage.size.width, graphImage.size.height);
     
-    [PDFRenderer drawImage:logo inRect:frame];
+    [PDFRenderer drawImage:graphImage inRect:frame];
     
     //Use this Code to Draw Images will eventually be used to render the graph image.
     
