@@ -259,8 +259,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"YOUR_SEGUE_NAME_HERE"])
+    if ([[segue identifier] isEqualToString:@"MySegue"])
     {
+        NSLog(@"Hello");
         PDFViewController *vc = [segue destinationViewController];
         [vc setGraphImage:graphImage];
     }

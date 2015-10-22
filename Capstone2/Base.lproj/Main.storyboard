@@ -198,7 +198,7 @@
                                 </constraints>
                                 <state key="normal" title="Generate PDF"/>
                                 <connections>
-                                    <segue destination="Mux-vT-VFI" kind="custom" id="H4F-qc-vS4"/>
+                                    <segue destination="Mux-vT-VFI" kind="push" identifier="MySegue" id="U9D-Nl-C6p"/>
                                 </connections>
                             </button>
                         </subviews>
