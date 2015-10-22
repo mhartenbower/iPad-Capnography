@@ -261,7 +261,6 @@
 {
     if ([[segue identifier] isEqualToString:@"MySegue"])
     {
-        NSLog(@"Hello");
         PDFViewController *vc = [segue destinationViewController];
         [vc setGraphImage:graphImage];
     }
