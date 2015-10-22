@@ -18,27 +18,12 @@
     // Mark the beginning of a new page. Makes a PDF document with 612 x 792.
     UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, 612, 792), nil);
     
-    //Code that ues UI Graphs to make and draw the PDF.
-    
-    
-    //Draw the text from the method that it shown bellow
-    
-    //UIImage *logo = graphImage;
-    
-    //CGRect frame = CGRectMake(50, 350, 600, 400);
-    
-    NSLog(@"The width is %a and the height is %a", graphImage.size.width,graphImage.size.height);
-    
-    
-    //CGRect frame = CGRectMake(0, 0, graphImage.size.width, graphImage.size.height);
     
     CGRect frame = CGRectMake(20, 350, 580, 400);
     
     [PDFRenderer drawImage:graphImage inRect:frame];
     
-    //Use this Code to Draw Images will eventually be used to render the graph image.
-    
-    // Close the PDF context and write the contents out.
+    //Draw the table to display the patient information
     
     int xOrigin = 50;
     int yOrigin = 100;
@@ -215,14 +200,6 @@
     
     int padding = 10;
     
-    //Takes Items that are from core data above and renders them in a chart. 
-    
-   // NSArray* patientInfo1 = [NSArray arrayWithObjects:@"First Name", firstName, @"Last Name", lastName, nil];
-   // NSArray* patientInfo2 = [NSArray arrayWithObjects:@"Date of Birth", dateOfBirth, @"MedicalID#", medicalID, nil];
-    //NSArray* patientInfo3 = [NSArray arrayWithObjects:@"Patient Email", patientEmail, @"Patient Phone", patientPhone, nil];
-    //NSArray* patientInfo4 = [NSArray arrayWithObjects:@"Doctor Email", doctorEmail, @"Doctor Name", doctorName, nil];
-    
-    //This works but the top does not.
     
     NSMutableArray* patientInfo1 = [[NSMutableArray alloc] init];
     
