@@ -222,13 +222,23 @@
     //NSArray* patientInfo3 = [NSArray arrayWithObjects:@"Patient Email", patientEmail, @"Patient Phone", patientPhone, nil];
     //NSArray* patientInfo4 = [NSArray arrayWithObjects:@"Doctor Email", doctorEmail, @"Doctor Name", doctorName, nil];
     
-    //This works but the top does not. 
+    //This works but the top does not.
     
-    NSArray* patientInfo1 = [NSArray arrayWithObjects:@"First Name", @"Test", @"Last Name", @"Test", nil];
-    NSArray* patientInfo2 = [NSArray arrayWithObjects:@"Date of Birth", @"Test", @"MedicalID#", @"Test", nil];
-    NSArray* patientInfo3 = [NSArray arrayWithObjects:@"Patient Email", @"Patient Email", @"Patient Phone", @"patientPhone", nil];
-    NSArray* patientInfo4 = [NSArray arrayWithObjects:@"Doctor Email", @"doctorEmail", @"Doctor Name", @"doctorName", nil];
+    NSMutableArray* patientInfo1 = [[NSMutableArray alloc] init];
+    [patientInfo1 addObject:firstName];
+    [patientInfo1 addObject:lastName];
     
+    NSMutableArray* patientInfo2 = [[NSMutableArray alloc] init];
+    [patientInfo2 addObject:dateOfBirth];
+    [patientInfo2 addObject:medicalID];
+    
+    NSMutableArray* patientInfo3 = [[NSMutableArray alloc] init];
+    [patientInfo3 addObject:patientEmail];
+    [patientInfo3 addObject:patientPhone];
+
+    NSMutableArray* patientInfo4 = [[NSMutableArray alloc] init];
+    [patientInfo4 addObject:doctorEmail];
+    [patientInfo4 addObject:doctorName];
     
     //NSArray* patientInfo5 = [NSArray arrayWithObjects:@"Blank", @"Blank", @"Blank", @"Blank", nil];
 
