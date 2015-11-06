@@ -44,10 +44,10 @@
     graph2 = [[CPTXYGraph alloc] initWithFrame:CGRectZero];
     
     
-    CPTTheme *theme1 = [CPTTheme themeNamed:kCPTStocksTheme];
+    CPTTheme *theme1 = [CPTTheme themeNamed:kCPTPlainWhiteTheme];
     [graph1 applyTheme:theme1];
     
-    CPTTheme *theme2 = [CPTTheme themeNamed:kCPTStocksTheme];
+    CPTTheme *theme2 = [CPTTheme themeNamed:kCPTPlainWhiteTheme];
     [graph2 applyTheme:theme2];
     
     
@@ -76,14 +76,14 @@
     graph1.plotAreaFrame.masksToBorder = NO;
     graph1.plotAreaFrame.cornerRadius  = 0.0f;
     CPTMutableLineStyle *borderLineStyle1 = [CPTMutableLineStyle lineStyle];
-    borderLineStyle1.lineColor           = [CPTColor whiteColor];
+    borderLineStyle1.lineColor           = [CPTColor blackColor];
     borderLineStyle1.lineWidth           = 2.0f;
     graph1.plotAreaFrame.borderLineStyle = borderLineStyle1;
     
     //Title Setup for Graph 1
     
     CPTMutableTextStyle*titleStyle1 = [CPTMutableTextStyle textStyle];
-    titleStyle1.color = [CPTColor whiteColor];
+    titleStyle1.color = [CPTColor blackColor];
     titleStyle1.fontName =@"Helvetica-Bold";
     titleStyle1.fontSize = 16.0f;
     
@@ -105,7 +105,7 @@
     graph2.plotAreaFrame.masksToBorder = NO;
     graph2.plotAreaFrame.cornerRadius = 0.0f;
     CPTMutableLineStyle *borderLineStyle2 = [CPTMutableLineStyle lineStyle];
-    borderLineStyle2.lineColor = [CPTColor whiteColor];
+    borderLineStyle2.lineColor = [CPTColor blackColor];
     borderLineStyle2.lineWidth = 2.0f;
     graph2.plotAreaFrame.borderLineStyle = borderLineStyle2;
     
@@ -116,7 +116,7 @@
     //Title Setup for Graph 2
     
     CPTMutableTextStyle*titleStyle2 = [CPTMutableTextStyle textStyle];
-    titleStyle2.color = [CPTColor whiteColor];
+    titleStyle2.color = [CPTColor blackColor];
     titleStyle2.fontName =@"Helvetica-Bold";
     titleStyle2.fontSize = 16.0f;
     
@@ -210,12 +210,12 @@
     //Chose the line style set the line width.
     
     CPTMutableLineStyle  *datalineStyle1 = [CPTMutableLineStyle lineStyle];
-    datalineStyle1.lineColor = [CPTColor whiteColor];
+    datalineStyle1.lineColor = [CPTColor colorWithComponentRed:0.0f/255.0f green:153.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
     datalineStyle1.lineWidth = 3.0f;
     plot1.dataLineStyle = datalineStyle1;
     
     CPTMutableLineStyle  *datalineStyle2 = [CPTMutableLineStyle lineStyle];
-    datalineStyle2.lineColor = [CPTColor whiteColor];
+    datalineStyle2.lineColor = [CPTColor colorWithComponentRed:0.0f/255.0f green:153.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
     datalineStyle2.lineWidth = 3.0f;
     plot2.dataLineStyle = datalineStyle2;
     

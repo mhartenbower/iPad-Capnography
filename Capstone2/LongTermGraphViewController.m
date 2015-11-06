@@ -40,7 +40,7 @@
     
     //Set the theme for the graph to be the default graph theme
     
-    CPTTheme *theme1 = [CPTTheme themeNamed:kCPTStocksTheme];
+    CPTTheme *theme1 = [CPTTheme themeNamed:kCPTPlainWhiteTheme];
     
     //Apply the theme to the Graph
     
@@ -56,14 +56,14 @@
     graph3.plotAreaFrame.masksToBorder = NO;
     graph3.plotAreaFrame.cornerRadius  = 0.0f;
     CPTMutableLineStyle *borderLineStyle1 = [CPTMutableLineStyle lineStyle];
-    borderLineStyle1.lineColor           = [CPTColor whiteColor];
+    borderLineStyle1.lineColor           = [CPTColor blackColor];
     borderLineStyle1.lineWidth           = 2.0f;
     graph3.plotAreaFrame.borderLineStyle = borderLineStyle1;
     
     //Title Setup for Graph 3
     
     CPTMutableTextStyle *titleStyle3 = [CPTMutableTextStyle textStyle];
-    titleStyle3.color = [CPTColor whiteColor];
+    titleStyle3.color = [CPTColor blackColor];
     titleStyle3.fontName =@"Helvetica-Bold";
     titleStyle3.fontSize = 16.0f;
     
@@ -118,7 +118,7 @@
     //Chose the line style and width that will be displayed
     
     CPTMutableLineStyle  *datalineStyle3 = [CPTMutableLineStyle lineStyle];
-    datalineStyle3.lineColor = [CPTColor whiteColor];
+    datalineStyle3.lineColor = [CPTColor colorWithComponentRed:0.0f/255.0f green:153.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
     datalineStyle3.lineWidth = 3.0f;
     plot3.dataLineStyle = datalineStyle3;
     
@@ -205,6 +205,12 @@
     float co2Value;
     
     coreDataArray = [array1 valueForKey:@"co2Value"];
+    
+    //check if we have enough data points
+    if((timePeriodSelector.selectedSegmentIndex * 200) > [coreDataArray count])
+    {
+        return 0;
+    }
     
     /*Print out the elements of the array to check
     for(id value in co2Values)
