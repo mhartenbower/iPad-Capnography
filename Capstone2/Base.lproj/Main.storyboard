@@ -41,29 +41,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-FX-cRp" customClass="CPTGraphHostingView">
-                                <rect key="frame" x="36" y="120" width="700" height="300"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VO-17-qOS">
-                                        <rect key="frame" x="389" y="47" width="68" height="21"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rV6-gU-p5v">
-                                        <rect key="frame" x="383" y="243" width="107" height="26"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X6s-2Y-Kh8">
-                                <rect key="frame" x="113" y="490" width="370" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X6s-2Y-Kh8">
+                                <rect key="frame" x="115" y="496" width="370" height="29"/>
                                 <animations/>
                                 <segments>
                                     <segment title="" image="Stop Filled-50.png"/>
@@ -73,8 +52,13 @@
                                     <action selector="PlayControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="pGD-pJ-5TA"/>
                                 </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PA6-v0-aD4" customClass="CPTGraphHostingView">
-                                <rect key="frame" x="36" y="420" width="700" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PA6-v0-aD4" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="20" y="290" width="560" height="191"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-FX-cRp" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="20" y="49" width="560" height="233"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -82,14 +66,20 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PA6-v0-aD4" firstAttribute="top" secondItem="dGt-FX-cRp" secondAttribute="bottom" constant="8" id="lzK-6O-Krh"/>
-                            <constraint firstItem="X6s-2Y-Kh8" firstAttribute="top" secondItem="PA6-v0-aD4" secondAttribute="bottom" constant="37" id="pHI-Ve-krw"/>
+                            <constraint firstItem="dGt-FX-cRp" firstAttribute="trailing" secondItem="PA6-v0-aD4" secondAttribute="trailing" id="1CX-ja-2nr"/>
+                            <constraint firstItem="PA6-v0-aD4" firstAttribute="centerX" secondItem="X6s-2Y-Kh8" secondAttribute="centerX" id="5a9-dd-KEP"/>
+                            <constraint firstItem="dGt-FX-cRp" firstAttribute="leading" secondItem="PA6-v0-aD4" secondAttribute="leading" id="AIP-Fb-Dru"/>
+                            <constraint firstItem="X6s-2Y-Kh8" firstAttribute="top" secondItem="PA6-v0-aD4" secondAttribute="bottom" constant="15" id="M3N-dH-LDf"/>
+                            <constraint firstItem="PA6-v0-aD4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="290" id="UMd-Dc-lQl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X6s-2Y-Kh8" secondAttribute="bottom" constant="27" id="YNN-2r-YWP"/>
+                            <constraint firstItem="X6s-2Y-Kh8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="95" id="YUT-Ph-aoq"/>
+                            <constraint firstItem="PA6-v0-aD4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kkz-Pu-ULW"/>
+                            <constraint firstItem="PA6-v0-aD4" firstAttribute="top" secondItem="dGt-FX-cRp" secondAttribute="bottom" constant="8" symbolic="YES" id="nvM-49-vzo"/>
+                            <constraint firstItem="dGt-FX-cRp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xRM-BV-KVY"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Real Time Graph" image="Heart Monitor-32.png" id="zzX-ow-KnG"/>
                     <connections>
-                        <outlet property="Label1" destination="rV6-gU-p5v" id="I0a-KW-TnQ"/>
-                        <outlet property="Label2" destination="2VO-17-qOS" id="xV8-bf-0sY"/>
                         <outlet property="PlayControl" destination="X6s-2Y-Kh8" id="acN-kx-83a"/>
                         <outlet property="graphView1" destination="PA6-v0-aD4" id="Kzy-Na-eFL"/>
                         <outlet property="graphView2" destination="dGt-FX-cRp" id="1Re-ll-iLb"/>

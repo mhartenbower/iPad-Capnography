@@ -300,16 +300,15 @@
     NSString* string2 = [NSString stringWithFormat:@"%.4f mmHg", appData.co2value*0.00760];
     
     //Sets up the label in the View Controller. Set the text of label 1 to string 1.
-    
-    [_Label1 setText:string1];
-    [_Label2 setText:string2];
+   
+    graph1.title = [@"Capnogram CO2 (Parts Per Million) " stringByAppendingString:string1];
+    graph2.title = [@"Capnogram CO2 (mmHG) " stringByAppendingString:string2];
     
 
     //Convert the float to an NS Number. And add this to the CO2 Array.
     [appData.co2ValueArray addObject:[NSNumber numberWithFloat:appData.co2value/10]];
     
     //Reload the data and refresh the graph.
-    
     [graph1 reloadData];
     [graph2 reloadData];
     //how to convert back from object to float = float value = [[_co2ValueArray lastObject] floatValue];
