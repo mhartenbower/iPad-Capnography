@@ -13,10 +13,12 @@
 #import "CorePlot-CocoaTouch.h"
 #import "NSNumberExtensions.h"
 #import "AppDelegate.h"
+#import <DropboxSDK/DropboxSDK.h>
+
 
 //Import the necessary frameworks
 
-@interface AppViewController : UIViewController <RFduinoDelegate, CPTPlotDataSource>
+@interface AppViewController : UIViewController <RFduinoDelegate, CPTPlotDataSource, DBRestClientDelegate>
 
 {
     CPTXYGraph *graph1;
@@ -35,6 +37,7 @@
 @property(nonatomic, assign) BOOL hasRun;
 @property(nonatomic, strong) RFduino *rfduino;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *PlayControl;
+@property (nonatomic, strong) DBRestClient *restClient;
 - (IBAction)PlayControlAction:(id)sender;
 
 

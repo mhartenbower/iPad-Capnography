@@ -47,6 +47,9 @@
 		0AF9EB9C1A8C130F00A8830A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9EB9B1A8C130F00A8830A /* CoreBluetooth.framework */; };
 		0AF9EBE41A8C1FD500A8830A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF9EBE31A8C1FD500A8830A /* UIKit.framework */; };
 		B32EF4201BBD018800CDF80F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32EF41F1BBD018800CDF80F /* CoreData.framework */; };
+		B35B4A321C1B878D000B9914 /* testFileDropboxMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = B35B4A311C1B878D000B9914 /* testFileDropboxMaker.m */; };
+		B35B4A361C1B8912000B9914 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35B4A351C1B8912000B9914 /* Security.framework */; };
+		B35B4A381C1B897C000B9914 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35B4A371C1B897C000B9914 /* DropboxSDK.framework */; };
 		B3761ED01BC4BC980020A996 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3761ECF1BC4BC980020A996 /* PDFViewController.m */; };
 		B3761ED21BC4C1C40020A996 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3761ED11BC4C1C40020A996 /* CoreText.framework */; };
 		B3761ED51BC4C2DE0020A996 /* PDFRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3761ED41BC4C2DE0020A996 /* PDFRenderer.m */; };
@@ -183,6 +186,10 @@
 		0AF9EB9B1A8C130F00A8830A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		0AF9EBE31A8C1FD500A8830A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B32EF41F1BBD018800CDF80F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B35B4A301C1B878D000B9914 /* testFileDropboxMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testFileDropboxMaker.h; path = WebsiteCode/testFileDropboxMaker.h; sourceTree = "<group>"; };
+		B35B4A311C1B878D000B9914 /* testFileDropboxMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testFileDropboxMaker.m; path = WebsiteCode/testFileDropboxMaker.m; sourceTree = "<group>"; };
+		B35B4A351C1B8912000B9914 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B35B4A371C1B897C000B9914 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
 		B3761ECE1BC4BC980020A996 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		B3761ECF1BC4BC980020A996 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
 		B3761ED11BC4C1C40020A996 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -366,6 +373,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35B4A361C1B8912000B9914 /* Security.framework in Frameworks */,
 				0A5462B01BD9F1560045026B /* AWSCloudWatch.framework in Frameworks */,
 				0A5462BC1BD9F1560045026B /* AWSSNS.framework in Frameworks */,
 				0A5462B51BD9F1560045026B /* AWSKinesis.framework in Frameworks */,
@@ -395,6 +403,7 @@
 				BB0B97E71A9E497C00A41AE3 /* QuartzCore.framework in Frameworks */,
 				0A5462B41BD9F1560045026B /* AWSElasticLoadBalancing.framework in Frameworks */,
 				0AF9EBE41A8C1FD500A8830A /* UIKit.framework in Frameworks */,
+				B35B4A381C1B897C000B9914 /* DropboxSDK.framework in Frameworks */,
 				0AF9EB9C1A8C130F00A8830A /* CoreBluetooth.framework in Frameworks */,
 				0A5462B71BD9F1560045026B /* AWSMachineLearning.framework in Frameworks */,
 				B3761EDA1BC4DD030020A996 /* libCorePlot-CocoaTouch.a in Frameworks */,
@@ -414,6 +423,8 @@
 		0A5462711BD9EE5D0045026B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B35B4A371C1B897C000B9914 /* DropboxSDK.framework */,
+				B35B4A351C1B8912000B9914 /* Security.framework */,
 				0A5462BE1BD9F1600045026B /* AWSCognito.framework */,
 				0A54629E1BD9F1560045026B /* AWSAPIGateway.framework */,
 				0A54629F1BD9F1560045026B /* AWSAutoScaling.framework */,
@@ -466,6 +477,7 @@
 		0AF9E3861A85CCF700A8830A = {
 			isa = PBXGroup;
 			children = (
+				B35B4A2F1C1B871D000B9914 /* WebsiteFiles */,
 				0A5462711BD9EE5D0045026B /* Frameworks */,
 				0AF9E3911A85CCF700A8830A /* Capstone2 */,
 				0AF9E3AB1A85CCF700A8830A /* Capstone2Tests */,
@@ -547,6 +559,15 @@
 			);
 			name = "Rfduino ";
 			path = ../rfduino;
+			sourceTree = "<group>";
+		};
+		B35B4A2F1C1B871D000B9914 /* WebsiteFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B35B4A301C1B878D000B9914 /* testFileDropboxMaker.h */,
+				B35B4A311C1B878D000B9914 /* testFileDropboxMaker.m */,
+			);
+			name = WebsiteFiles;
 			sourceTree = "<group>";
 		};
 		B3761EC91BC494870020A996 /* Core Data */ = {
@@ -951,6 +972,7 @@
 				B3E7A7191BD47D56004E76E1 /* ReaderMainPagebar.m in Sources */,
 				B3E7A7241BD47D56004E76E1 /* ThumbsViewController.m in Sources */,
 				B3761ED51BC4C2DE0020A996 /* PDFRenderer.m in Sources */,
+				B35B4A321C1B878D000B9914 /* testFileDropboxMaker.m in Sources */,
 				B3E7A7231BD47D56004E76E1 /* ThumbsMainToolbar.m in Sources */,
 				0A5258F31BD3858E005611C0 /* NewPatientInformation.m in Sources */,
 				BB409C511BB5C73F0086483F /* LongTermGraphViewController.m in Sources */,

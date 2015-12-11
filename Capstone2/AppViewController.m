@@ -13,6 +13,7 @@
 #import "RFduinoManager.h"
 #import "RFduinoObject.h"
 #import "NSNumberExtensions.h"
+#import <DropboxSDK/DropboxSDK.h>
 
 
 @interface AppViewController ()
@@ -31,6 +32,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
+    self.restClient.delegate = self;
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"textfile.txt"];
+    NSLog(@"%@", filePath);
+    NSString *fileContent = [[NSString alloc] initWithContentsOfFile:filePath];
+    NSLog(@"%@", fileContent);
+    
+    NSString *destDir = @"/";
+    [self.restClient uploadFile:@"textfile.txt" toPath:destDir withParentRev:nil fromPath:documentsDirectory];
     RFduinoObject *newRFduino = [RFduinoObject sharedManager];
     rfduino = newRFduino.rfduino;
     // Do any additional setup after loading the view, typically from a nib.
@@ -317,6 +332,12 @@
     
 }
 
+- (IBAction)didPressLink:(id)sender {
+    
+    if (![[DBSession sharedSession] isLinked]) {
+        [[DBSession sharedSession] linkFromController:self];
+    }
+}
 
 
 

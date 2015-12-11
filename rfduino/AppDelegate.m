@@ -27,7 +27,7 @@
 //Files checked for ioS 9/Xcode 7 -John
 
 #import "AppDelegate.h"
-
+#import <DropboxSDK/DropboxSDK.h>
 #import "ScanViewController.h"
 #import "RFduinoManager.h"
 
@@ -44,6 +44,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    DBSession *dbSession = [[DBSession alloc]
+                            initWithAppKey:@"f3o4knm8d1xe6am"
+                            appSecret:@"vtxekcs19krujbx"
+                            root:kDBRootAppFolder]; // either kDBRootAppFolder or kDBRootDropbox
+    [DBSession setSharedSession:dbSession];
+    
+    
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    
+    NSString *fileName = [NSString stringWithFormat:@"textfile.txt",
+                          documentsDirectory];
+    //create content - four lines of text
+    NSString *content = @"Hello 124";
+    //save content to the documents directory
+    [content writeToFile:fileName
+              atomically:NO
+                encoding:NSStringEncodingConversionAllowLossy
+                   error:nil];
     
     
     rfduinoManager = RFduinoManager.sharedRFduinoManager;
@@ -116,6 +139,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     [self saveContext];
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url
+  sourceApplication:(NSString *)source annotation:(id)annotation {
+    if ([[DBSession sharedSession] handleOpenURL:url]) {
+        if ([[DBSession sharedSession] isLinked]) {
+            NSLog(@"App linked successfully!");
+            // At this point you can start making API calls
+        }
+        return YES;
+    }
+    // Add whatever other url handling code your app requires here
+    return NO;
 }
 
 #pragma mark - Core Data stack
