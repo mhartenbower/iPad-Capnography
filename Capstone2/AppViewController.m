@@ -255,8 +255,11 @@
     //Define given CO2 Value
     float co2Value = dataFloat(data);
     appData.co2value = co2Value;
-    //store co2Value into coredata here
-
+    
+    
+    
+    float mmhgco2Value = (co2Value/10)*0.00760;
+    
     
     if(PlayControl.selectedSegmentIndex == 1)
     {

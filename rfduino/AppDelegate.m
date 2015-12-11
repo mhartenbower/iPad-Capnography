@@ -45,7 +45,28 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    NSArray *paths = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
     
+    //make a file name to write the data to using the documents directory:
+    NSString *fileName = [NSString stringWithFormat:@"textfile.txt",
+                          documentsDirectory];
+    //create content - four lines of text
+    NSString *content = @"Hello 124";
+    //save content to the documents directory
+    [content writeToFile:fileName
+              atomically:NO
+                encoding:NSStringEncodingConversionAllowLossy
+                   error:nil];
+    
+    paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"textfile.txt"];
+    NSLog(@"%@", filePath);
+    NSString *fileContent = [[NSString alloc] initWithContentsOfFile:filePath];
+    NSLog(@"%@", fileContent);
     rfduinoManager = RFduinoManager.sharedRFduinoManager;
     
     ScanViewController *viewController = [[ScanViewController alloc] init];
